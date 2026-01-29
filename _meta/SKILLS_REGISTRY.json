@@ -1,0 +1,108 @@
+{
+  "$schema": "Machine-readable skill registry for intelligent indexing",
+  "version": "2.0.0",
+  "lastUpdated": "2026-01-29",
+  "indexingStrategy": {
+    "note": "4-layer hybrid indexing: query + summary + sub-chunk + block",
+    "principles": [
+      "Index (for matching) ≠ Content (returned to model)",
+      "Multiple entry points per skill: typicalQueries + summaryIndex + subCapabilities",
+      "Long skills split into sub-capabilities for fine-grained matching",
+      "Evolution tracking for continuous improvement"
+    ]
+  },
+  "skills": [
+    {
+      "id": "workflow-orchestrator",
+      "name": "workflow-orchestrator",
+      "path": ".cursor/skills/workflow-orchestrator/SKILL.md",
+      "type": "orchestrator",
+      "layer": 0,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "我要做一个功能，不知道从哪开始",
+            "这个任务应该走什么流程",
+            "当前处于什么阶段",
+            "下一步应该做什么",
+            "怎么把想法变成可交付的方案"
+          ],
+          "antiPatterns": [
+            "单一文件编辑（不需要编排）",
+            "简单问答（不需要工程流程）"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "判断工程阶段（需求/设计/方案/编码/测试/部署/复盘），生成对应产物文件，串联其他 skills",
+          "input": "用户的较大请求或跨多阶段任务",
+          "output": ".cursor/work/ 下的阶段产物（prd/design/plan/progress等）",
+          "keyPhrases": [
+            "流程编排",
+            "阶段判定",
+            "产物落盘",
+            "多步骤任务"
+          ],
+          "dependencies": [
+            "planning-with-files"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ui-ux-design-system-generator",
+      "name": "ui-ux-design-system-generator",
+      "path": ".cursor/skills/ui-ux-design-system-generator/SKILL.md",
+      "type": "design",
+      "layer": 2,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "设计系统",
+            "UI风格推荐",
+            "配色方案",
+            "选什么字体",
+            "美化界面",
+            "界面太丑",
+            "视觉设计",
+            "品牌配色",
+            "推荐调色板",
+            "SaaS应该用什么风格"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "基于行业推理规则，自动生成完整设计系统（样式/颜色/字体/布局/反模式）",
+          "input": "产品描述或行业类别（SaaS/金融/医疗/电商等）",
+          "output": "完整设计系统（Pattern+Style+Colors+Typography+Anti-patterns+Checklist）",
+          "keyPhrases": [
+            "设计系统",
+            "UI样式",
+            "配色",
+            "字体",
+            "品牌",
+            "视觉规范"
+          ]
+        }
+      },
+      "dataSource": {
+        "styles": 67,
+        "colorPalettes": 96,
+        "fontPairings": 57
+      },
+      "originRepo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "originStars": "24.3k"
+    }
+  ],
+  "indexMaintenanceGuide": {
+    "whenToUpdate": [
+      "创建新skill时：同时在此注册",
+      "发现触发不准时：补充 typicalQueries",
+      "任务结束复盘时：把'用户实际说法'加入 queryIndex",
+      "skill拆分/合并时：更新 subCapabilities"
+    ],
+    "howToUse": [
+      "AI可读此文件快速定位skill",
+      "可用于自动生成'如何选择skill'的决策树",
+      "可用于检测索引覆盖度"
+    ]
+  }
+}
