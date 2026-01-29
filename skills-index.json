@@ -1,0 +1,424 @@
+{
+  "version": "2.0",
+  "last_updated": "2026-01-29",
+  "indexing_strategy": "multi_layer_hybrid",
+  "skills": {
+    "by_id": {
+      "frontend-design": {
+        "name": "frontend-design",
+        "category": "design",
+        "subcategory": "frontend",
+        "summary": "Production-grade frontend interfaces with distinctive design, avoiding generic AI aesthetics",
+        "when_to_use": ["Building web components", "Creating pages", "Designing dashboards", "Building applications"],
+        "key_features": ["Unique aesthetics", "Bold design choices", "Creative typography", "Unexpected layouts"],
+        "output": "HTML/CSS/React code with stunning visuals",
+        "integration": ["web-design-guidelines", "vercel-react-best-practices", "ui-ux-pro-max"],
+        "priority": 3
+      },
+      "web-design-guidelines": {
+        "name": "web-design-guidelines",
+        "category": "design",
+        "subcategory": "review",
+        "summary": "UI/UX review with WCAG accessibility standards, visual hierarchy, spacing, typography",
+        "when_to_use": ["Design reviews", "Accessibility checks", "UX improvements", "Design quality assessment"],
+        "key_features": ["WCAG compliance", "Visual hierarchy", "Design audit", "Actionable recommendations"],
+        "output": "Comprehensive design audit report",
+        "integration": ["frontend-design", "ui-ux-pro-max", "audit-website"],
+        "priority": 3
+      },
+      "vercel-react-best-practices": {
+        "name": "vercel-react-best-practices",
+        "category": "development",
+        "subcategory": "frontend",
+        "summary": "React/Next.js performance optimization with 40+ performance patterns",
+        "when_to_use": ["Writing React code", "Code review", "Refactoring", "Performance optimization"],
+        "key_features": ["40+ patterns", "Hooks best practices", "Code splitting", "Server components"],
+        "output": "Optimized React code",
+        "integration": ["frontend-design", "building-native-ui", "khazix-skills"],
+        "priority": 3
+      },
+      "building-native-ui": {
+        "name": "building-native-ui",
+        "category": "development",
+        "subcategory": "mobile",
+        "summary": "Expo/React Native mobile app development with platform-specific patterns",
+        "when_to_use": ["Building mobile apps", "React Native development", "Expo projects"],
+        "key_features": ["Platform patterns", "Navigation", "Performance", "Responsive design"],
+        "output": "Mobile app code",
+        "integration": ["frontend-design", "ui-ux-pro-max", "vercel-react-best-practices"],
+        "priority": 3
+      },
+      "ui-ux-pro-max": {
+        "name": "ui-ux-pro-max",
+        "category": "design",
+        "subcategory": "system",
+        "summary": "Professional UI/UX with 67 styles, 96 palettes, 57 font pairings, 100+ industry rules",
+        "when_to_use": ["Building professional interfaces", "Design systems", "Industry-specific design"],
+        "key_features": ["67 UI styles", "96 color palettes", "57 font pairings", "Industry rules"],
+        "output": "Complete design system",
+        "integration": ["frontend-design", "web-design-guidelines", "building-native-ui"],
+        "priority": 3
+      },
+      "supabase-postgres-best-practices": {
+        "name": "supabase-postgres-best-practices",
+        "category": "development",
+        "subcategory": "backend",
+        "summary": "PostgreSQL optimization for Supabase with RLS, stored procedures, real-time",
+        "when_to_use": ["Database design", "Query optimization", "Performance tuning", "RLS policies"],
+        "key_features": ["RLS policies", "Stored procedures", "Real-time subscriptions", "Performance patterns"],
+        "output": "Optimized SQL and database architecture",
+        "integration": ["dev-workflow"],
+        "priority": 2
+      },
+      "audit-website": {
+        "name": "audit-website",
+        "category": "qa",
+        "subcategory": "comprehensive",
+        "summary": "Comprehensive website audit covering performance, accessibility, SEO, security, UX",
+        "when_to_use": ["Website review", "Quality assessment", "Issue identification", "Pre-launch check"],
+        "key_features": ["Multi-dimensional audit", "Priority recommendations", "Score system"],
+        "output": "Audit report with prioritized issues",
+        "integration": ["seo-audit", "web-design-guidelines", "vercel-react-best-practices"],
+        "priority": 3
+      },
+      "seo-audit": {
+        "name": "seo-audit",
+        "category": "qa",
+        "subcategory": "seo",
+        "summary": "SEO analysis with meta tags, structured data, Core Web Vitals",
+        "when_to_use": ["SEO improvement", "Search ranking", "Technical SEO", "Content optimization"],
+        "key_features": ["Meta tag analysis", "Structured data", "Core Web Vitals", "Recommendations"],
+        "output": "SEO audit report",
+        "integration": ["audit-website", "web-design-guidelines"],
+        "priority": 2
+      },
+      "agent-browser": {
+        "name": "agent-browser",
+        "category": "automation",
+        "subcategory": "web",
+        "summary": "Browser automation for testing, scraping, and web interaction",
+        "when_to_use": ["Browser testing", "Web scraping", "Automated interactions", "Screenshot capture"],
+        "key_features": ["Page interaction", "Screenshots", "Form handling", "Data extraction"],
+        "output": "Automation scripts and test results",
+        "integration": ["superpowers", "audit-website"],
+        "priority": 2
+      },
+      "skill-creator": {
+        "name": "skill-creator",
+        "category": "tools",
+        "subcategory": "creation",
+        "summary": "Create custom Claude Code skills with proper structure and documentation",
+        "when_to_use": ["Creating new skills", "Custom workflows", "Domain-specific tasks"],
+        "key_features": ["Template-based", "Structure validation", "Documentation generation"],
+        "output": "New skill directory with SKILL.md",
+        "integration": ["dev-workflow", "skills-updater"],
+        "priority": 2
+      },
+      "dev-workflow": {
+        "name": "dev-workflow",
+        "category": "orchestrator",
+        "subcategory": "workflow",
+        "summary": "Coordinates multiple skills for comprehensive development tasks",
+        "when_to_use": ["Complex projects", "Multi-skill coordination", "Workflow templates"],
+        "key_features": ["Workflow templates", "Skill coordination", "Task management"],
+        "output": "Coordinated workflow execution",
+        "integration": ["all skills"],
+        "priority": 3
+      },
+      "planning-with-files": {
+        "name": "planning-with-files",
+        "category": "productivity",
+        "subcategory": "planning",
+        "summary": "Persistent markdown planning based on Manus AI patterns (filesystem as memory)",
+        "when_to_use": ["Complex tasks", "Multi-session projects", "Progress tracking"],
+        "key_features": ["Session recovery", "3-file pattern", "Progress tracking"],
+        "output": "task_plan.md, findings.md, progress.md",
+        "integration": ["dev-workflow", "superpowers", "obsidian-skills"],
+        "priority": 3
+      },
+      "superpowers": {
+        "name": "superpowers",
+        "category": "development",
+        "subcategory": "workflow",
+        "summary": "TDD, systematic debugging, collaboration patterns, git worktrees",
+        "when_to_use": ["TDD development", "Debugging", "Code review", "Team collaboration"],
+        "key_features": ["RED-GREEN-REFACTOR", "Systematic debugging", "Git worktrees", "Collaboration workflows"],
+        "output": "Structured development processes",
+        "integration": ["planning-with-files", "dev-workflow", "khazix-skills"],
+        "priority": 2
+      },
+      "obsidian-skills": {
+        "name": "obsidian-skills",
+        "category": "documentation",
+        "subcategory": "knowledge",
+        "summary": "Obsidian note-taking with wiki links, Zettelkasten, knowledge graphs",
+        "when_to_use": ["Knowledge management", "Note-taking", "Documentation", "Knowledge bases"],
+        "key_features": ["Wiki links", "Callouts", "Diagrams", "Zettelkasten"],
+        "output": "Obsidian-compatible files",
+        "integration": ["planning-with-files", "document-suite"],
+        "priority": 2
+      },
+      "document-suite": {
+        "name": "document-suite",
+        "category": "documentation",
+        "subcategory": "office",
+        "summary": "Create and edit Word, PowerPoint, Excel, PDF documents",
+        "when_to_use": ["Professional documents", "Presentations", "Reports", "Spreadsheets"],
+        "key_features": ["Templates", "Formatting", "Multiple formats"],
+        "output": "DOCX, PPTX, XLSX, PDF files",
+        "integration": ["planning-with-files", "obsidian-skills"],
+        "priority": 2
+      },
+      "khazix-skills": {
+        "name": "khazix-skills",
+        "category": "development",
+        "subcategory": "analysis",
+        "summary": "Code analysis, refactoring, documentation, workflow automation",
+        "when_to_use": ["Code analysis", "Refactoring", "Pattern recognition"],
+        "key_features": ["Complexity assessment", "Pattern recognition", "Automation"],
+        "output": "Analysis reports and improved code",
+        "integration": ["vercel-react-best-practices", "superpowers", "skill-from-masters"],
+        "priority": 2
+      },
+      "skill-from-masters": {
+        "name": "skill-from-masters",
+        "category": "learning",
+        "subcategory": "extraction",
+        "summary": "Extract patterns and best practices from expert developer codebases",
+        "when_to_use": ["Learning from experts", "Pattern extraction", "Best practice encoding"],
+        "key_features": ["Pattern extraction", "Best practices", "Skill generation"],
+        "output": "Reusable skills from experts",
+        "integration": ["skill-creator", "khazix-skills"],
+        "priority": 1
+      },
+      "skills-updater": {
+        "name": "skills-updater",
+        "category": "tools",
+        "subcategory": "management",
+        "summary": "Automatic skill management with version tracking, updates, rollback",
+        "when_to_use": ["Keeping skills current", "Version management", "Backup/restore"],
+        "key_features": ["Version tracking", "Automatic updates", "Rollback", "Dependency management"],
+        "output": "Updated skills with backups",
+        "integration": ["skill-creator", "all skills"],
+        "priority": 1
+      },
+      "design-md": {
+        "name": "design-md",
+        "category": "stitch",
+        "subcategory": "documentation",
+        "summary": "Google Stitch official skill for generating comprehensive design system documentation (DESIGN.md)",
+        "when_to_use": ["Starting Stitch projects", "Documenting design systems", "Creating design specifications"],
+        "key_features": ["Design system documentation", "Natural language", "AI-optimized", "Design tokens"],
+        "output": "DESIGN.md with complete design system",
+        "integration": ["stitch-loop", "react-components", "frontend-design"],
+        "priority": 3
+      },
+      "react-components": {
+        "name": "react-components",
+        "category": "stitch",
+        "subcategory": "code",
+        "summary": "Google Stitch official skill for converting Stitch designs into production-ready React components",
+        "when_to_use": ["Converting designs to code", "Building React apps from Stitch", "Component library creation"],
+        "key_features": ["Vite + React", "Design tokens", "AST validation", "TypeScript support"],
+        "output": "Production-ready React components",
+        "integration": ["design-md", "stitch-loop", "vercel-react-best-practices"],
+        "priority": 3
+      },
+      "stitch-loop": {
+        "name": "stitch-loop",
+        "category": "stitch",
+        "subcategory": "automation",
+        "summary": "Google Stitch official skill for automated iterative design generation with AI-driven loops",
+        "when_to_use": ["Bulk-generating pages", "Maintaining design consistency", "Automated UI creation"],
+        "key_features": ["AI-driven iteration", "Design system adherence", "Batch generation", "Consistency validation"],
+        "output": "Multiple consistent Stitch pages",
+        "integration": ["design-md", "react-components", "dev-workflow"],
+        "priority": 3
+      }
+    },
+    "by_category": {
+      "stitch": {
+        "label": "🔵 Stitch AI",
+        "skills": ["design-md", "react-components", "stitch-loop"]
+      },
+      "design": {
+        "label": "🎨 设计类",
+        "skills": ["frontend-design", "web-design-guidelines", "ui-ux-pro-max", "building-native-ui"]
+      },
+      "development": {
+        "label": "💻 开发类",
+        "skills": ["vercel-react-best-practices", "supabase-postgres-best-practices", "superpowers", "khazix-skills"]
+      },
+      "qa": {
+        "label": "✅ 质量保障",
+        "skills": ["audit-website", "seo-audit"]
+      },
+      "productivity": {
+        "label": "📊 生产力",
+        "skills": ["planning-with-files"]
+      },
+      "documentation": {
+        "label": "📝 文档类",
+        "skills": ["obsidian-skills", "document-suite"]
+      },
+      "automation": {
+        "label": "🤖 自动化",
+        "skills": ["agent-browser"]
+      },
+      "learning": {
+        "label": "🎓 学习类",
+        "skills": ["khazix-skills", "skill-from-masters"]
+      },
+      "tools": {
+        "label": "🛠️ 工具类",
+        "skills": ["skill-creator", "skills-updater"]
+      },
+      "orchestrator": {
+        "label": "🎯 编排类",
+        "skills": ["dev-workflow"]
+      }
+    },
+    "by_intent": {
+      "create": {
+        "label": "🎯 创建/构建",
+        "queries": {
+          "用Stitch创建设计": ["design-md", "stitch-loop", "react-components"],
+          "创建设计系统文档": ["design-md"],
+          "批量生成页面": ["stitch-loop"],
+          "转换Stitch为React": ["react-components"],
+          "设计一个网站": ["frontend-design", "ui-ux-pro-max", "web-design-guidelines"],
+          "开发移动App": ["building-native-ui", "frontend-design"],
+          "创建React组件": ["vercel-react-best-practices", "frontend-design"],
+          "制作PPT文档": ["document-suite"],
+          "建立知识库": ["obsidian-skills", "planning-with-files"],
+          "设计数据库": ["supabase-postgres-best-practices"]
+        }
+      },
+      "review": {
+        "label": "🔍 检查/审查",
+        "queries": {
+          "审查代码": ["vercel-react-best-practices", "khazix-skills"],
+          "检查网站": ["audit-website", "seo-audit", "web-design-guidelines"],
+          "评估设计": ["web-design-guidelines", "ui-ux-pro-max"],
+          "分析性能": ["vercel-react-best-practices", "supabase-postgres-best-practices"],
+          "测试网站": ["agent-browser", "superpowers"]
+        }
+      },
+      "optimize": {
+        "label": "🚀 优化/改进",
+        "queries": {
+          "优化React性能": ["vercel-react-best-practices"],
+          "改进SEO": ["seo-audit"],
+          "提升用户体验": ["web-design-guidelines", "ui-ux-pro-max"],
+          "重构代码": ["khazix-skills", "superpowers"],
+          "优化数据库": ["supabase-postgres-best-practices"]
+        }
+      },
+      "plan": {
+        "label": "📋 规划/管理",
+        "queries": {
+          "规划复杂项目": ["planning-with-files", "dev-workflow"],
+          "管理开发流程": ["superpowers", "dev-workflow"],
+          "组织团队协作": ["superpowers"],
+          "跟踪项目进度": ["planning-with-files"],
+          "创建工作流": ["skill-creator", "dev-workflow"]
+        }
+      },
+      "learn": {
+        "label": "🎓 学习/提取",
+        "queries": {
+          "学习最佳实践": ["skill-from-masters"],
+          "理解专家代码": ["skill-from-masters", "khazix-skills"],
+          "创建自定义技能": ["skill-creator"],
+          "提取代码模式": ["skill-from-masters"]
+        }
+      },
+      "automate": {
+        "label": "🤖 自动化",
+        "queries": {
+          "自动化测试": ["agent-browser", "superpowers"],
+          "浏览器自动化": ["agent-browser"],
+          "批量处理": ["khazix-skills"],
+          "更新技能": ["skills-updater"]
+        }
+      }
+    },
+    "by_workflow": {
+      "stitch_ai_pipeline": {
+        "name": "Stitch AI 设计流水线",
+        "skills": ["design-md", "stitch-loop", "react-components", "vercel-react-best-practices"],
+        "description": "AI驱动的快速UI开发: 设计系统 → 批量生成 → React代码 → 性能优化"
+      },
+      "frontend_pipeline": {
+        "name": "前端开发流水线",
+        "skills": ["ui-ux-pro-max", "frontend-design", "web-design-guidelines", "vercel-react-best-practices"],
+        "description": "用于Web组件、页面、应用开发"
+      },
+      "fullstack_app": {
+        "name": "全栈应用开发",
+        "skills": ["planning-with-files", "ui-ux-pro-max", "frontend-design", "supabase-postgres-best-practices", "vercel-react-best-practices", "audit-website"],
+        "description": "完整的Web应用开发（含数据库）"
+      },
+      "tdd_development": {
+        "name": "测试驱动开发",
+        "skills": ["superpowers", "vercel-react-best-practices"],
+        "description": "质量驱动的开发流程"
+      },
+      "website_audit": {
+        "name": "网站质量审计",
+        "skills": ["agent-browser", "audit-website", "seo-audit", "web-design-guidelines"],
+        "description": "全面的网站质量审查"
+      },
+      "mobile_app": {
+        "name": "移动应用开发",
+        "skills": ["planning-with-files", "building-native-ui", "ui-ux-pro-max", "frontend-design", "superpowers"],
+        "description": "React Native/Expo应用开发"
+      },
+      "complex_project": {
+        "name": "复杂项目管理",
+        "skills": ["planning-with-files", "dev-workflow"],
+        "description": "多阶段、跨会话的复杂项目"
+      },
+      "knowledge_base": {
+        "name": "知识库搭建",
+        "skills": ["planning-with-files", "obsidian-skills", "document-suite"],
+        "description": "企业/个人知识管理系统"
+      }
+    },
+    "combinations": {
+      "stitch_ai_app": {
+        "name": "Stitch AI 应用",
+        "skills": ["design-md", "stitch-loop", "react-components", "vercel-react-best-practices", "audit-website"],
+        "use_case": "使用Stitch AI快速构建完整应用"
+      },
+      "complete_web_app": {
+        "name": "完整Web应用",
+        "skills": ["planning-with-files", "ui-ux-pro-max", "frontend-design", "vercel-react-best-practices", "supabase-postgres-best-practices", "audit-website", "seo-audit"],
+        "use_case": "从零到一的Web应用开发"
+      },
+      "mobile_application": {
+        "name": "移动应用",
+        "skills": ["planning-with-files", "building-native-ui", "ui-ux-pro-max", "superpowers"],
+        "use_case": "移动应用开发"
+      },
+      "knowledge_system": {
+        "name": "知识库系统",
+        "skills": ["planning-with-files", "obsidian-skills", "document-suite"],
+        "use_case": "知识管理系统的搭建"
+      },
+      "code_quality": {
+        "name": "代码质量提升",
+        "skills": ["khazix-skills", "vercel-react-best-practices", "superpowers", "audit-website"],
+        "use_case": "现有代码的质量改进"
+      }
+    }
+  },
+  "metadata": {
+    "total_skills": 21,
+    "categories": 10,
+    "workflow_templates": 8,
+    "intent_types": 6,
+    "indexing_method": "hybrid_query_summary_category_block",
+    "stitch_integration": true
+  }
+}
