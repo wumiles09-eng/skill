@@ -2,14 +2,17 @@
 
 # 🚀 Claude Code Skills Collection
 
-**21 Professional Skills for AI-Powered Development**
+**40+ Professional Skills for Complete R&D Workflow**
 
-[![Skills](https://img.shields.io/badge/Skills-21-blue)]()
+[![Skills](https://img.shields.io/badge/Skills-40+-blue)]()
 [![Categories](https://img.shields.io/badge/Categories-10-green)]()
+[![Phases](https://img.shields.io/badge/Phases-11-purple)]()
 [![Stitch AI](https://img.shields.io/badge/Stitch_AI-3-purple)]()
 [![License](https://img.shields.io/badge/License-MIT-yellow)]()
 
-Complete development workflow system powered by specialized AI skills — from AI-powered UI design to production-ready code.
+Complete R&D workflow system powered by specialized AI skills — from idea to production and beyond. **覆盖完整研发流程：想法→需求→设计→技术方案→开发→测试→部署→推广→知识管理→迭代→Skill优化**
+
+📖 **[查看整合版文档](README_INTEGRATION.md)** | **[整合分析](INTEGRATION_ANALYSIS.md)**
 
 [Features](#-features) • [Quick Start](#-quick-start) • [Skills](#-skills-inventory) • [Workflows](#-workflows) • [Contributing](#-contributing)
 
@@ -344,6 +347,36 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Anthropic** - Claude Code and Agent Skills platform
 - **Google Labs** - Stitch AI and official Stitch skills
 - **Community** - All contributors and skill creators
+
+---
+
+## 🆕 Integration Update (2026-01-29)
+
+**New: Complete R&D Workflow Coverage + Intelligent Indexing**
+
+This collection now integrates best practices from three excellent skill sources:
+
+- **Cursor Hi Offer**: 4-layer intelligent indexing, workflow orchestration, design system generator (67/96/57)
+- **VerveFlow**: 7-phase SOP with mandatory checkpoints, progressive delivery, iOS deployment
+- **Original Collection**: Frontend, backend, QA, and productivity skills
+
+### Key Additions
+
+| Skill | Description | Source |
+|-------|-------------|--------|
+| **workflow-orchestrator** | End-to-end R&D process coordination | Cursor |
+| **ui-ux-design-system-generator** | 67 styles, 96 palettes, 57 fonts with industry reasoning | Cursor |
+| **skill-indexing-maintainer** | 4-layer hybrid indexing with evolution tracking | Cursor |
+| **SKILLS_REGISTRY.json** | Machine-readable skill registry | Cursor |
+| **prd-generator** | Business-language PRD with Mermaid flowcharts | VerveFlow |
+| **tech-proposal** | A/B方案对比 with quantified assessment | VerveFlow |
+| **ios-simulator-deployment** | Complete iOS build/install/launch with troubleshooting | VerveFlow |
+
+### Documentation
+
+- **[README_INTEGRATION.md](README_INTEGRATION.md)** - Complete integrated documentation
+- **[INTEGRATION_ANALYSIS.md](INTEGRATION_ANALYSIS.md)** - Integration strategy and decision matrix
+- **[_meta/SKILLS_REGISTRY.json](_meta/SKILLS_REGISTRY.json)** - Machine-readable skill registry
 
 ---
 
