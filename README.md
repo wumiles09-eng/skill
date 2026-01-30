@@ -10,9 +10,9 @@
 [![Stitch AI](https://img.shields.io/badge/Stitch_AI-3-purple)]()
 [![License](https://img.shields.io/badge/License-MIT-yellow)]()
 
-Complete R&D workflow system powered by specialized AI skills — from idea to production and beyond. **覆盖完整研发流程：想法→需求→设计→技术方案→开发→测试→部署→推广→知识管理→迭代→Skill优化**
+Complete R&D workflow system powered by specialized AI skills — from idea to production and beyond. **Covers complete R&D process: Idea → Requirement → Design → Solution → Development → Testing → Deployment → Promotion → Knowledge → Iteration → Evolution**
 
-📖 **[查看整合版文档](README_INTEGRATION.md)** | **[整合分析](INTEGRATION_ANALYSIS.md)**
+📖 **[View Integration Documentation](README_INTEGRATION.md)** | **[Integration Analysis](INTEGRATION_ANALYSIS.md)** | **[Completion Report](INTEGRATION_COMPLETE.md)**
 
 [Features](#-features) • [Quick Start](#-quick-start) • [Skills](#-skills-inventory) • [Workflows](#-workflows) • [Contributing](#-contributing)
 
@@ -23,11 +23,13 @@ Complete R&D workflow system powered by specialized AI skills — from idea to p
 ## ✨ Features
 
 - 🔵 **Stitch AI Integration** - 3 official Google Stitch skills for AI-powered UI design
+- 🎯 **Workflow Orchestration** - End-to-end coordination across all R&D phases
 - 🎨 **Frontend Excellence** - 5 specialized skills for modern frontend development
 - 💻 **Full-Stack Support** - Backend, database, and API development skills
 - ✅ **Quality Assurance** - Comprehensive testing, auditing, and SEO skills
 - 📊 **Productivity Tools** - Planning, documentation, and workflow automation
-- 🎓 **Continuous Learning** - Skills that extract patterns from expert developers
+- 🧠 **Intelligent Indexing** - 4-layer hybrid indexing with evolution tracking
+- 🔄 **Self-Evolving** - Skills improve with usage through feedback loops
 
 ---
 
@@ -51,79 +53,127 @@ Simply mention what you need in Claude Code:
 
 ```
 You: "Design a landing page for my SaaS product"
-Claude: Activates frontend-design + ui-ux-pro-max
+Claude: Activates frontend-design + ui-ux-design-system-generator
 
 You: "Review my React code"
-Claude: Activates vercel-react-best-practices
+Claude: Activates vercel-react-best-practices + code-review
 
 You: "Generate 5 blog pages with Stitch"
 Claude: Activates design-md → stitch-loop → react-components
+
+You: "I want to add a login feature"
+Claude: Activates workflow-orchestrator → requirements-clarifier → architecture-designer
 ```
 
 ---
 
 ## 📚 Skills Inventory
 
-### 🔵 Stitch AI Skills (3)
+### 🎯 Orchestrator (2)
 
 | Skill | Description |
 |-------|-------------|
-| **design-md** | Generate comprehensive DESIGN.md documentation |
-| **stitch-loop** | Automated iterative design generation |
-| **react-components** | Convert Stitch designs to React code |
+| **workflow-orchestrator** | End-to-end workflow coordination (11 phases) |
+| **planning-with-files** | Persistent file-based planning system |
 
-**Stitch Workflow:** `design-md → stitch-loop → react-components`
-
----
-
-### 🎨 Frontend Development (5)
+### 💡 Idea → Requirement (3)
 
 | Skill | Description |
 |-------|-------------|
-| **frontend-design** | Production-grade interfaces with unique aesthetics |
-| **web-design-guidelines** | UI/UX review and WCAG accessibility |
-| **vercel-react-best-practices** | React/Next.js performance (40+ patterns) |
+| **requirements-clarifier** | Structured requirement extraction |
+| **prd-generator** | Business-language PRD with Mermaid flowcharts |
+| **optimize-iteration-spec** | Iteration document optimization (4-layer scoring) |
+
+### 🎨 Design (4)
+
+| Skill | Description |
+|-------|-------------|
+| **architecture-designer** | System architecture + ADR recording |
+| **ui-ux-design-system-generator** | Design system (67 styles, 96 palettes, 57 fonts) |
+| **pencil-design-workflow** | Pencil MCP design-to-code workflow |
+| **stitch-design-workflow** | Stitch MCP end-to-end workflow |
+
+### 🔧 Solution (2)
+
+| Skill | Description |
+|-------|-------------|
+| **tech-proposal** | Technical solution assessment (A/B comparison) |
+| **implementation-planner** | Implementation plan writer |
+
+### 💻 Development (6)
+
+| Skill | Description |
+|-------|-------------|
+| **frontend-design** | Production-grade frontend interfaces |
 | **building-native-ui** | Expo/React Native mobile development |
-| **ui-ux-pro-max** | 67 styles, 96 palettes, 57 font pairings |
+| **coding-executor** | Execute by task checklist |
+| **react-performance-optimizer** | React/Next.js performance (40+ patterns) |
+| **vercel-react-best-practices** | Vercel official React best practices |
+| **systematic-debugging** | Systematic debugging and root cause analysis |
 
----
-
-### 💻 Backend & Development (4)
-
-| Skill | Description |
-|-------|-------------|
-| **supabase-postgres-best-practices** | PostgreSQL optimization for Supabase |
-| **superpowers** | TDD, debugging, collaboration workflows |
-| **khazix-skills** | Code analysis, refactoring, automation |
-
----
-
-### ✅ Quality Assurance (2)
+### ✅ Testing (5)
 
 | Skill | Description |
 |-------|-------------|
+| **testing-orchestrator** | Test strategy (Unit/Integration/E2E) |
+| **quality-gate** | Quality gates (TDD first/regression/pre-completion) |
+| **visual-test** | Playwright MCP visual testing |
 | **audit-website** | Comprehensive website auditing |
 | **seo-audit** | SEO analysis and optimization |
 
----
-
-### 📊 Productivity & Planning (2)
+### 🚀 Deployment (3)
 
 | Skill | Description |
 |-------|-------------|
-| **planning-with-files** | Persistent planning (Manus AI patterns) |
-| **superpowers** | TDD, debugging, collaboration |
+| **deployment-and-ops** | Deployment/migration/rollback/monitoring |
+| **versioning-and-release** | SemVer/changelog/release process |
+| **ios-simulator-deployment** | iOS simulator deployment (complete guide) |
 
----
-
-### 📝 Documentation (2)
+### 📚 Knowledge (3)
 
 | Skill | Description |
 |-------|-------------|
-| **obsidian-skills** | Obsidian note-taking integration |
+| **obsidian-skills** | Obsidian note-taking and knowledge management |
+| **documentation** | Document governance + Obsidian integration |
 | **document-suite** | Word, PowerPoint, Excel, PDF creation |
 
----
+### 🔄 Iteration (2)
+
+| Skill | Description |
+|-------|-------------|
+| **code-review** | Code review checklist (6 dimensions) |
+| **planning-with-files** | Persistent planning for iterations |
+
+### 🛠️ Tools (4)
+
+| Skill | Description |
+|-------|-------------|
+| **skill-indexer** | Intelligent indexing maintenance |
+| **skill-evolution** | Skill lifecycle and closed-loop improvement |
+| **skill-creator** | Create custom skills |
+| **skills-updater** | Automatic skill management |
+
+### 🔧 Backend (2)
+
+| Skill | Description |
+|-------|-------------|
+| **postgres-best-practices** | PostgreSQL optimization for Supabase |
+| **superpowers** | TDD, debugging, collaboration workflows |
+
+### 🔵 Stitch AI (3)
+
+| Skill | Description |
+|-------|-------------|
+| **design-md** | Generate DESIGN.md documentation |
+| **stitch-loop** | Automated iterative design generation |
+| **react-components** | Convert Stitch to React code |
+
+### 🎨 Frontend (2)
+
+| Skill | Description |
+|-------|-------------|
+| **web-design-guidelines** | UI/UX review and WCAG accessibility |
+| **ui-ux-pro-max** | Professional UI/UX (67 styles, 96 palettes, 57 fonts) |
 
 ### 🤖 Automation (1)
 
@@ -131,85 +181,64 @@ Claude: Activates design-md → stitch-loop → react-components
 |-------|-------------|
 | **agent-browser** | Browser automation and web interaction |
 
----
-
-### 🎓 Learning (2)
+### 🌱 Learning (2)
 
 | Skill | Description |
 |-------|-------------|
+| **khazix-skills** | Code analysis, refactoring, automation |
 | **skill-from-masters** | Extract patterns from expert developers |
-
----
-
-### 🛠️ Tools (3)
-
-| Skill | Description |
-|-------|-------------|
-| **skill-creator** | Create custom skills |
-| **skills-updater** | Automatic skill management |
-| **dev-workflow** | Orchestrates all skills |
 
 ---
 
 ## 🔄 Workflows
 
-### 1. Stitch AI Design Pipeline 🆕
+### 1. Stitch AI Design Pipeline
 
 ```
-design-md → stitch-loop → react-components → vercel-react-best-practices
+design-md → stitch-loop → react-components → vercel-react-best-practices → Delivery
 ```
 
-**AI-powered rapid UI development**
+**Use for**: AI-powered rapid UI development with Google Stitch
 
----
-
-### 2. Frontend Development Pipeline
+### 2. Complete R&D Workflow
 
 ```
-ui-ux-pro-max → frontend-design → web-design-guidelines → vercel-react-best-practices
+workflow-orchestrator → requirements → design → solution → development → testing → deployment → knowledge
 ```
 
-**Modern web applications**
+**Use for**: Full product development from idea to production
 
----
-
-### 3. Full-Stack Application
+### 3. Frontend Development Pipeline
 
 ```
-planning-with-files → frontend + backend skills → audit → Delivery
+ui-ux-design-system-generator → frontend-design → web-design-guidelines → vercel-react-best-practices
 ```
 
-**Complete web applications**
+**Use for**: Web components, pages, applications
 
----
-
-### 4. Test-Driven Development
+### 4. Testing-Driven Development
 
 ```
-superpowers (TDD) → implementation → vercel-react-best-practices
+superpowers (TDD) → implementation → quality-gate → testing-orchestrator → verification
 ```
 
-**Quality-driven development**
-
----
+**Use for**: Quality-focused development
 
 ### 5. Website Quality Audit
 
 ```
-agent-browser → audit-website + seo-audit + web-design-guidelines
+agent-browser → audit-website + seo-audit + web-design-guidelines → Report
 ```
 
-**Comprehensive website review**
-
----
+**Use for**: Reviewing existing websites
 
 ### 6. Mobile App Development
 
 ```
-building-native-ui → ui-ux-pro-max → frontend-design → testing
+planning-with-files → building-native-ui → ui-ux-pro-max → frontend-design → testing
 ```
 
-**React Native/Expo applications**
+**Use for**: React Native/Expo applications
 
 ---
 
@@ -228,24 +257,26 @@ building-native-ui → ui-ux-pro-max → frontend-design → testing
 ### Building a New Feature
 
 ```
-1. planning-with-files - Create plan
-2. ui-ux-pro-max - Design system
-3. frontend-design - Implementation
-4. superpowers (TDD) - Test-driven development
-5. web-design-guidelines - Review UI/UX
-6. vercel-react-best-practices - Optimize performance
+1. workflow-orchestrator - Determine current phase
+2. requirements-clarifier - Extract requirements
+3. architecture-designer - Design architecture
+4. implementation-planner - Create implementation plan
+5. coding-executor - Execute development
+6. testing-orchestrator - Test implementation
+7. code-review - Review code quality
+8. deployment-and-ops - Deploy feature
 ```
 
 ### Launching a Website
 
 ```
-1. planning-with-files - Project plan
-2. ui-ux-pro-max - Design system
+1. workflow-orchestrator - Plan project
+2. ui-ux-design-system-generator - Create design system
 3. frontend-design - Build site
 4. vercel-react-best-practices - Optimize
-5. seo-audit - SEO best practices
+5. seo-audit - Ensure SEO best practices
 6. audit-website - Final audit
-7. document-suite - Launch presentation
+7. documentation - Create launch docs
 ```
 
 ---
@@ -254,16 +285,16 @@ building-native-ui → ui-ux-pro-max → frontend-design → testing
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                         dev-workflow (Orchestrator)                  │
+│                    workflow-orchestrator (Orchestrator)              │
 └─────────────────────────────────────────────────────────────────────┘
                                     │
-        ┌───────────────────────────┼───────────────────────────┬───────────────┐
-        │                           │                           │               │
-        ▼                           ▼                           ▼               ▼
+        ┌───────────────────────────┼───────────────────────────┐
+        │                           │                           │
+        ▼                           ▼                           ▼
 ┌───────────────┐           ┌───────────────┐           ┌───────────────┐ ┌─────────────┐
 │   Stitch AI   │           │   Frontend    │           │   Backend     │ │ Productivity│
 ├───────────────┤           ├───────────────┤           ├───────────────┤ ├─────────────┤
-│ design-md     │           │ ui-ux-pro-max │           │ supabase-*    │ │ planning-*  │
+│ design-md     │           │ ui-ux-gen     │           │ postgres-*    │ │ planning-*  │
 │ stitch-loop   │           │ frontend-*    │           │               │ │ superpowers │
 │ react-*       │           │ web-design-*  │           │               │ │             │
 │               │           │ vercel-*      │           │               │ │             │
@@ -272,25 +303,17 @@ building-native-ui → ui-ux-pro-max → frontend-design → testing
         │                           │                           │               │
         └───────────────────────────┴───────────────────────────┴───────────────┘
                                     │
-        ┌───────────────────────────┼───────────────────────────┬───────────────┐
-        │                           │                           │               │
-        ▼                           ▼                           ▼               ▼
-┌───────────────┐           ┌───────────────┐           ┌───────────────┐ ┌─────────────┐
-│      QA       │           │ Documentation │           │   Learning    │ │    Tools    │
-├───────────────┤           ├───────────────┤           ├───────────────┤ ├─────────────┤
-│ audit-website │           │ obsidian-*    │           │ khazix-*      │ │ skill-*     │
-│ seo-audit     │           │ document-*    │           │ skill-from-*  │ │ skills-*    │
-│ web-design-*  │           │               │           │               │ │             │
-└───────────────┘           └───────────────┘           └───────────────┘ └─────────────┘
+        ┌───────────────────────────┴───────────────────────────┐
+        │                           │                           │
+        ▼                           ▼                           ▼
+┌───────────────┐           ┌───────────────┐           ┌───────────────┐
+│      QA       │           │ Documentation │           │    Tools    │
+├───────────────┤           ├───────────────┤           ├───────────────┤
+│ audit-*       │           │ obsidian-*    │           │ skill-*      │
+│ seo-*         │           │ docs-*        │           │ skill-*      │
+│ web-design-*  │           │               │           │              │
+└───────────────┘           └───────────────┘           └───────────────┘
 ```
-
----
-
-## 📖 Documentation
-
-- **[FIND_SKILL.md](FIND_SKILL.md)** - Quick skill finder
-- **[SKILL_INDEX.md](SKILL_INDEX.md)** - Complete indexing system
-- **[skills-index.json](skills-index.json)** - Structured skill data
 
 ---
 
@@ -346,37 +369,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Anthropic** - Claude Code and Agent Skills platform
 - **Google Labs** - Stitch AI and official Stitch skills
+- **Cursor Hi Offer** - Intelligent indexing and workflow orchestration
+- **VerveFlow** - 7-phase SOP and progressive delivery methodology
 - **Community** - All contributors and skill creators
-
----
-
-## 🆕 Integration Update (2026-01-29)
-
-**New: Complete R&D Workflow Coverage + Intelligent Indexing**
-
-This collection now integrates best practices from three excellent skill sources:
-
-- **Cursor Hi Offer**: 4-layer intelligent indexing, workflow orchestration, design system generator (67/96/57)
-- **VerveFlow**: 7-phase SOP with mandatory checkpoints, progressive delivery, iOS deployment
-- **Original Collection**: Frontend, backend, QA, and productivity skills
-
-### Key Additions
-
-| Skill | Description | Source |
-|-------|-------------|--------|
-| **workflow-orchestrator** | End-to-end R&D process coordination | Cursor |
-| **ui-ux-design-system-generator** | 67 styles, 96 palettes, 57 fonts with industry reasoning | Cursor |
-| **skill-indexing-maintainer** | 4-layer hybrid indexing with evolution tracking | Cursor |
-| **SKILLS_REGISTRY.json** | Machine-readable skill registry | Cursor |
-| **prd-generator** | Business-language PRD with Mermaid flowcharts | VerveFlow |
-| **tech-proposal** | A/B方案对比 with quantified assessment | VerveFlow |
-| **ios-simulator-deployment** | Complete iOS build/install/launch with troubleshooting | VerveFlow |
-
-### Documentation
-
-- **[README_INTEGRATION.md](README_INTEGRATION.md)** - Complete integrated documentation
-- **[INTEGRATION_ANALYSIS.md](INTEGRATION_ANALYSIS.md)** - Integration strategy and decision matrix
-- **[_meta/SKILLS_REGISTRY.json](_meta/SKILLS_REGISTRY.json)** - Machine-readable skill registry
 
 ---
 
