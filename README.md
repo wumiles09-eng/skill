@@ -53,13 +53,13 @@ Simply mention what you need in Claude Code:
 
 ```
 You: "Design a landing page for my SaaS product"
-Claude: Activates frontend-design + ui-ux-design-system-generator
+Claude: Activates frontend-design + design-system-generator
 
 You: "Review my React code"
-Claude: Activates vercel-react-best-practices + code-review
+Claude: Activates react-optimization + code-review
 
 You: "Generate 5 blog pages with Stitch"
-Claude: Activates design-md → stitch-loop → react-components
+Claude: Activates design-doc-generator → stitch-loop → react-components
 
 You: "I want to add a login feature"
 Claude: Activates workflow-orchestrator → requirements-clarifier → architecture-designer
@@ -89,16 +89,16 @@ Claude: Activates workflow-orchestrator → requirements-clarifier → architect
 | Skill | Description |
 |-------|-------------|
 | **architecture-designer** | System architecture + ADR recording |
-| **ui-ux-design-system-generator** | Design system (67 styles, 96 palettes, 57 fonts) |
-| **pencil-design-workflow** | Pencil MCP design-to-code workflow |
-| **stitch-design-workflow** | Stitch MCP end-to-end workflow |
+| **design-system-generator** | Design system (67 styles, 96 palettes, 57 fonts) |
+| **pencil-workflow** | Pencil MCP design-to-code workflow |
+| **stitch-workflow** | Stitch MCP end-to-end workflow |
 
 ### 🔧 Solution (2)
 
 | Skill | Description |
 |-------|-------------|
 | **tech-proposal** | Technical solution assessment (A/B comparison) |
-| **implementation-planner** | Implementation plan writer |
+| **implementation-planner** | Implementation planning |
 
 ### 💻 Development (6)
 
@@ -108,7 +108,7 @@ Claude: Activates workflow-orchestrator → requirements-clarifier → architect
 | **building-native-ui** | Expo/React Native mobile development |
 | **coding-executor** | Execute by task checklist |
 | **react-performance-optimizer** | React/Next.js performance (40+ patterns) |
-| **vercel-react-best-practices** | Vercel official React best practices |
+| **react-optimization** | Vercel official React best practices |
 | **systematic-debugging** | Systematic debugging and root cause analysis |
 
 ### ✅ Testing (5)
@@ -127,14 +127,14 @@ Claude: Activates workflow-orchestrator → requirements-clarifier → architect
 |-------|-------------|
 | **deployment-and-ops** | Deployment/migration/rollback/monitoring |
 | **versioning-and-release** | SemVer/changelog/release process |
-| **ios-simulator-deployment** | iOS simulator deployment (complete guide) |
+| **ios-deployment** | iOS simulator deployment (complete guide) |
 
 ### 📚 Knowledge (3)
 
 | Skill | Description |
 |-------|-------------|
-| **obsidian-skills** | Obsidian note-taking and knowledge management |
-| **documentation** | Document governance + Obsidian integration |
+| **obsidian** | Obsidian note-taking and knowledge management |
+| **documentation** | Document governance + integration |
 | **document-suite** | Word, PowerPoint, Excel, PDF creation |
 
 ### 🔄 Iteration (2)
@@ -157,14 +157,14 @@ Claude: Activates workflow-orchestrator → requirements-clarifier → architect
 
 | Skill | Description |
 |-------|-------------|
-| **postgres-best-practices** | PostgreSQL optimization for Supabase |
+| **postgres-optimization** | PostgreSQL optimization for Supabase |
 | **superpowers** | TDD, debugging, collaboration workflows |
 
 ### 🔵 Stitch AI (3)
 
 | Skill | Description |
 |-------|-------------|
-| **design-md** | Generate DESIGN.md documentation |
+| **design-doc-generator** | Generate DESIGN.md documentation |
 | **stitch-loop** | Automated iterative design generation |
 | **react-components** | Convert Stitch to React code |
 
@@ -173,7 +173,7 @@ Claude: Activates workflow-orchestrator → requirements-clarifier → architect
 | Skill | Description |
 |-------|-------------|
 | **web-design-guidelines** | UI/UX review and WCAG accessibility |
-| **ui-ux-pro-max** | Professional UI/UX (67 styles, 96 palettes, 57 fonts) |
+| **design-system-reference** | Professional UI/UX reference (67 styles, 96 palettes, 57 fonts) |
 
 ### 🤖 Automation (1)
 
@@ -185,7 +185,7 @@ Claude: Activates workflow-orchestrator → requirements-clarifier → architect
 
 | Skill | Description |
 |-------|-------------|
-| **khazix-skills** | Code analysis, refactoring, automation |
+| **code-analysis** | Code analysis, refactoring, automation |
 | **skill-from-masters** | Extract patterns from expert developers |
 
 ---
@@ -195,7 +195,7 @@ Claude: Activates workflow-orchestrator → requirements-clarifier → architect
 ### 1. Stitch AI Design Pipeline
 
 ```
-design-md → stitch-loop → react-components → vercel-react-best-practices → Delivery
+design-doc-generator → stitch-loop → react-components → react-optimization → Delivery
 ```
 
 **Use for**: AI-powered rapid UI development with Google Stitch
@@ -211,7 +211,7 @@ workflow-orchestrator → requirements → design → solution → development �
 ### 3. Frontend Development Pipeline
 
 ```
-ui-ux-design-system-generator → frontend-design → web-design-guidelines → vercel-react-best-practices
+design-system-generator → frontend-design → web-design-guidelines → react-optimization
 ```
 
 **Use for**: Web components, pages, applications
@@ -235,7 +235,7 @@ agent-browser → audit-website + seo-audit + web-design-guidelines → Report
 ### 6. Mobile App Development
 
 ```
-planning-with-files → building-native-ui → ui-ux-pro-max → frontend-design → testing
+planning-with-files → building-native-ui → design-system-reference → frontend-design → testing
 ```
 
 **Use for**: React Native/Expo applications
@@ -247,10 +247,10 @@ planning-with-files → building-native-ui → ui-ux-pro-max → frontend-design
 ### AI-Powered App Development
 
 ```
-1. design-md - Create design system
+1. design-doc-generator - Create design system
 2. stitch-loop - Generate all pages
 3. react-components - Convert to React
-4. vercel-react-best-practices - Optimize code
+4. react-optimization - Optimize code
 5. audit-website - Final quality check
 ```
 
@@ -271,9 +271,9 @@ planning-with-files → building-native-ui → ui-ux-pro-max → frontend-design
 
 ```
 1. workflow-orchestrator - Plan project
-2. ui-ux-design-system-generator - Create design system
+2. design-system-generator - Create design system
 3. frontend-design - Build site
-4. vercel-react-best-practices - Optimize
+4. react-optimization - Optimize
 5. seo-audit - Ensure SEO best practices
 6. audit-website - Final audit
 7. documentation - Create launch docs
@@ -288,18 +288,17 @@ planning-with-files → building-native-ui → ui-ux-pro-max → frontend-design
 │                    workflow-orchestrator (Orchestrator)              │
 └─────────────────────────────────────────────────────────────────────┘
                                     │
-        ┌───────────────────────────┼───────────────────────────┐
+        ┌───────────────────────────┴───────────────────────────┐
         │                           │                           │
         ▼                           ▼                           ▼
-┌───────────────┐           ┌───────────────┐           ┌───────────────┐ ┌─────────────┐
-│   Stitch AI   │           │   Frontend    │           │   Backend     │ │ Productivity│
-├───────────────┤           ├───────────────┤           ├───────────────┤ ├─────────────┤
-│ design-md     │           │ ui-ux-gen     │           │ postgres-*    │ │ planning-*  │
-│ stitch-loop   │           │ frontend-*    │           │               │ │ superpowers │
-│ react-*       │           │ web-design-*  │           │               │ │             │
-│               │           │ vercel-*      │           │               │ │             │
-│               │           │ building-*    │           │               │ │             │
-└───────┬───────┘           └───────┬───────┘           └───────┬───────┘ └─────────────┘
+┌───────────────┐           ┌───────────────┐           ┌───────────────┐
+│   Stitch AI   │           │   Frontend    │           │   Backend     │
+├───────────────┤           ├───────────────┤           ├───────────────┤
+│ design-doc    │           │ design-*      │           │ postgres-*    │
+│ stitch-loop   │           │ react-*       │           │               │
+│ react-*       │           │ web-*         │           │               │
+│               │           │ building-*    │           │               │
+└───────┬───────┘           └───────┬───────┘           └───────┬───────┘
         │                           │                           │               │
         └───────────────────────────┴───────────────────────────┴───────────────┘
                                     │
@@ -309,9 +308,9 @@ planning-with-files → building-native-ui → ui-ux-pro-max → frontend-design
 ┌───────────────┐           ┌───────────────┐           ┌───────────────┐
 │      QA       │           │ Documentation │           │    Tools    │
 ├───────────────┤           ├───────────────┤           ├───────────────┤
-│ audit-*       │           │ obsidian-*    │           │ skill-*      │
-│ seo-*         │           │ docs-*        │           │ skill-*      │
-│ web-design-*  │           │               │           │              │
+│ audit-*       │           │ obsidian      │           │ skill-*      │
+│ seo-*         │           │ docs-*        │           │ skills-*     │
+│ web-*         │           │               │           │              │
 └───────────────┘           └───────────────┘           └───────────────┘
 ```
 
