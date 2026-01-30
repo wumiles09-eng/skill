@@ -2,9 +2,9 @@
 
 # 🚀 Claude Code Skills Collection
 
-**40+ Professional Skills for Complete R&D Workflow**
+**45+ Professional Skills for Complete R&D Workflow**
 
-[![Skills](https://img.shields.io/badge/Skills-40+-blue)]()
+[![Skills](https://img.shields.io/badge/Skills-45+-blue)]()
 [![Categories](https://img.shields.io/badge/Categories-10-green)]()
 [![Phases](https://img.shields.io/badge/Phases-11-purple)]()
 [![Stitch AI](https://img.shields.io/badge/Stitch_AI-3-purple)]()
