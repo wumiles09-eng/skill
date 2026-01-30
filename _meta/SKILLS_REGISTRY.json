@@ -1,6 +1,6 @@
 {
   "$schema": "Machine-readable skill registry for intelligent indexing",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "lastUpdated": "2026-01-29",
   "indexingStrategy": {
     "note": "4-layer hybrid indexing: query + summary + sub-chunk + block",
@@ -15,32 +15,32 @@
     {
       "id": "workflow-orchestrator",
       "name": "workflow-orchestrator",
-      "path": ".cursor/skills/workflow-orchestrator/SKILL.md",
+      "path": "workflow-orchestrator/SKILL.md",
       "type": "orchestrator",
       "layer": 0,
       "indexingMethods": {
         "queryIndex": {
           "typicalQueries": [
-            "我要做一个功能，不知道从哪开始",
-            "这个任务应该走什么流程",
-            "当前处于什么阶段",
-            "下一步应该做什么",
-            "怎么把想法变成可交付的方案"
+            "I want to build a feature, don't know where to start",
+            "What workflow should this task follow",
+            "What phase am I currently in",
+            "What should I do next",
+            "How to turn my idea into a deliverable solution"
           ],
           "antiPatterns": [
-            "单一文件编辑（不需要编排）",
-            "简单问答（不需要工程流程）"
+            "Single file editing (doesn't need orchestration)",
+            "Simple Q&A (doesn't need engineering workflow)"
           ]
         },
         "summaryIndex": {
-          "capability": "判断工程阶段（需求/设计/方案/编码/测试/部署/复盘），生成对应产物文件，串联其他 skills",
-          "input": "用户的较大请求或跨多阶段任务",
-          "output": ".cursor/work/ 下的阶段产物（prd/design/plan/progress等）",
+          "capability": "Determine engineering phase (requirement/design/solution/coding/testing/deployment/retrospective), generate corresponding deliverables, chain other skills",
+          "input": "User's large requests or multi-phase tasks",
+          "output": "Phase deliverables in work directory (prd/design/plan/progress)",
           "keyPhrases": [
-            "流程编排",
-            "阶段判定",
-            "产物落盘",
-            "多步骤任务"
+            "workflow orchestration",
+            "phase determination",
+            "deliverable generation",
+            "multi-step tasks"
           ],
           "dependencies": [
             "planning-with-files"
@@ -49,37 +49,204 @@
       }
     },
     {
-      "id": "ui-ux-design-system-generator",
-      "name": "ui-ux-design-system-generator",
-      "path": ".cursor/skills/ui-ux-design-system-generator/SKILL.md",
+      "id": "requirements-clarifier",
+      "name": "requirements-clarifier",
+      "path": "requirements-clarifier/SKILL.md",
+      "type": "requirement",
+      "layer": 1,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Requirements are unclear",
+            "How to write a PRD",
+            "How to define acceptance criteria",
+            "Goals/scope/constraints unclear",
+            "Help me clarify requirements"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Transform vague ideas into structured requirements through core question checklist (users/goals/scope/flows/data/non-functional)",
+          "input": "User says 'I want to do X' but goals/acceptance unclear",
+          "output": "prd.md skeleton or complete version in work directory",
+          "keyPhrases": [
+            "requirement clarification",
+            "acceptance criteria",
+            "Given-When-Then",
+            "user stories"
+          ],
+          "nextStep": [
+            "optimize-iteration-spec",
+            "architecture-designer"
+          ]
+        }
+      }
+    },
+    {
+      "id": "prd-generator",
+      "name": "prd-generator",
+      "path": "prd-generator/SKILL.md",
+      "type": "requirement",
+      "layer": 1,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Generate PRD document",
+            "Create product requirements",
+            "Write business requirements",
+            "PRD template"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Generate structured PRD with business language priority, Mermaid flowcharts, Obsidian integration",
+          "input": "Vague product idea or feature request",
+          "output": "Complete PRD document with business goals, feature list, acceptance criteria",
+          "keyPhrases": [
+            "PRD generation",
+            "business language",
+            "Mermaid flowcharts",
+            "product requirements"
+          ]
+        }
+      },
+      "origin": "VerveFlow"
+    },
+    {
+      "id": "optimize-iteration-spec",
+      "name": "optimize-iteration-spec",
+      "path": "optimize-iteration-spec/SKILL.md",
+      "type": "requirement",
+      "layer": 1,
+      "subCapabilities": [
+        {
+          "id": "optimize-iteration-spec__scoring",
+          "name": "Iteration Document Scoring",
+          "description": "Score requirement documents by 4-layer structure (functional overview/page interaction/feature flow/business logic)",
+          "triggers": ["Check document quality", "Evaluate completeness", "How complete is this doc"]
+        },
+        {
+          "id": "optimize-iteration-spec__completion",
+          "name": "Requirement Document Completion",
+          "description": "Generate directly pasteable completion content based on missing items",
+          "triggers": ["Complete document", "Generate template", "Missing XX how to write"]
+        }
+      ],
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Check my requirement document",
+            "Is this feature spec complete",
+            "What's missing from the requirements",
+            "Help me complete the PRD",
+            "Generate feature template"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Check and optimize iterative SaaS requirement documents (4-layer structure scoring + missing completion + template generation)",
+          "input": "Iteration document path or content",
+          "output": "Scoring report + directly usable completion content",
+          "keyPhrases": [
+            "4-layer structure",
+            "functional overview",
+            "page interaction",
+            "business logic",
+            "scoring",
+            "completion"
+          ]
+        }
+      }
+    },
+    {
+      "id": "architecture-designer",
+      "name": "architecture-designer",
+      "path": "architecture-designer/SKILL.md",
       "type": "design",
       "layer": 2,
       "indexingMethods": {
         "queryIndex": {
           "typicalQueries": [
-            "设计系统",
-            "UI风格推荐",
-            "配色方案",
-            "选什么字体",
-            "美化界面",
-            "界面太丑",
-            "视觉设计",
-            "品牌配色",
-            "推荐调色板",
-            "SaaS应该用什么风格"
+            "Design system architecture",
+            "Create architecture document",
+            "System design",
+            "API design",
+            "Database design"
           ]
         },
         "summaryIndex": {
-          "capability": "基于行业推理规则，自动生成完整设计系统（样式/颜色/字体/布局/反模式）",
-          "input": "产品描述或行业类别（SaaS/金融/医疗/电商等）",
-          "output": "完整设计系统（Pattern+Style+Colors+Typography+Anti-patterns+Checklist）",
+          "capability": "Design system architecture with ADR recording (system boundaries/modules/data flow/API/risks)",
+          "input": "PRD or requirement document",
+          "output": "Architecture document + ADR records",
           "keyPhrases": [
-            "设计系统",
-            "UI样式",
-            "配色",
-            "字体",
-            "品牌",
-            "视觉规范"
+            "system architecture",
+            "ADR",
+            "API design",
+            "data model",
+            "technical boundaries"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tech-proposal",
+      "name": "tech-proposal",
+      "path": "tech-proposal/SKILL.md",
+      "type": "design",
+      "layer": 2,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Technical proposal assessment",
+            "A/B solution comparison",
+            "Tech stack selection",
+            "Feasibility study",
+            "Solution evaluation"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Technical solution assessment with A/B comparison, quantified evaluation (cost/time/risk)",
+          "input": "Requirement or design document",
+          "output": "Tech proposal with comparison matrix and recommended solution",
+          "keyPhrases": [
+            "A/B comparison",
+            "feasibility",
+            "tech stack",
+            "risk assessment",
+            "cost evaluation"
+          ]
+        }
+      },
+      "origin": "VerveFlow"
+    },
+    {
+      "id": "ui-ux-design-system-generator",
+      "name": "ui-ux-design-system-generator",
+      "path": "ui-ux-design-system-generator/SKILL.md",
+      "type": "design",
+      "layer": 2,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Design system",
+            "UI style recommendation",
+            "Color palette",
+            "Font selection",
+            "Beautify interface",
+            "Interface looks ugly",
+            "Visual design",
+            "Brand colors",
+            "Color scheme recommendation"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Auto-generate complete design system based on industry reasoning (styles/colors/fonts/layout/anti-patterns)",
+          "input": "Product description or industry category (SaaS/Finance/Healthcare/E-commerce/etc.)",
+          "output": "Complete design system (Pattern+Style+Colors+Typography+Anti-patterns+Checklist)",
+          "keyPhrases": [
+            "design system",
+            "UI styles",
+            "colors",
+            "fonts",
+            "brand",
+            "visual guidelines"
           ]
         }
       },
@@ -90,19 +257,362 @@
       },
       "originRepo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
       "originStars": "24.3k"
+    },
+    {
+      "id": "testing-orchestrator",
+      "name": "testing-orchestrator",
+      "path": "testing-orchestrator/SKILL.md",
+      "type": "quality",
+      "layer": 3,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Test strategy",
+            "Testing plan",
+            "Unit test coverage",
+            "Integration testing",
+            "E2E testing"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Test strategy and execution orchestration (Unit/Integration/E2E/regression)",
+          "input": "Feature or system ready for testing",
+          "output": "Test plan with coverage requirements and failure analysis",
+          "keyPhrases": [
+            "test strategy",
+            "coverage",
+            "unit tests",
+            "integration tests",
+            "end-to-end tests"
+          ]
+        }
+      }
+    },
+    {
+      "id": "quality-gate",
+      "name": "quality-gate",
+      "path": "quality-gate/SKILL.md",
+      "type": "quality",
+      "layer": 3,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Quality gate check",
+            "Pre-commit verification",
+            "TDD requirement",
+            "Code ready to merge",
+            "Pre-completion verification"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Quality gates ensuring code meets standards before commit/merge/release (TDD first/regression testing/pre-completion)",
+          "input": "Code ready for commit/merge/release",
+          "output": "Quality gate pass/fail with specific issues",
+          "keyPhrases": [
+            "TDD first",
+            "regression testing",
+            "quality standards",
+            "definition of done"
+          ]
+        }
+      }
+    },
+    {
+      "id": "deployment-and-ops",
+      "name": "deployment-and-ops",
+      "path": "deployment-and-ops/SKILL.md",
+      "type": "deployment",
+      "layer": 4,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Deployment strategy",
+            "How to deploy",
+            "Runbook generation",
+            "Monitoring setup",
+            "Production deployment"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Deployment and operations (deployment/migration/rollback/monitoring/alerting, Runbook + Release Notes)",
+          "input": "Code ready for production",
+          "output": "Runbook with deployment steps and monitoring config",
+          "keyPhrases": [
+            "deployment",
+            "migration",
+            "rollback",
+            "monitoring",
+            "runbook"
+          ]
+        }
+      }
+    },
+    {
+      "id": "versioning-and-release",
+      "name": "versioning-and-release",
+      "path": "versioning-and-release/SKILL.md",
+      "type": "deployment",
+      "layer": 4,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Version management",
+            "SemVer",
+            "Changelog generation",
+            "Release process",
+            "Version numbering"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Version management (SemVer/changelog/release process)",
+          "input": "Ready for new version",
+          "output": "Updated version number + changelog",
+          "keyPhrases": [
+            "SemVer",
+            "changelog",
+            "release notes",
+            "version control"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ios-simulator-deployment",
+      "name": "ios-simulator-deployment",
+      "path": "ios-simulator-deployment/SKILL.md",
+      "type": "deployment",
+      "layer": 4,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "iOS simulator deployment",
+            "Build and run on iOS simulator",
+            "xcodebuild",
+            "iOS testing"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Complete iOS build/install/launch workflow with troubleshooting guide",
+          "input": "iOS code ready to test",
+          "output": "iOS app running on simulator with verification",
+          "keyPhrases": [
+            "iOS simulator",
+            "xcodebuild",
+            "iOS deployment",
+            "simulator testing"
+          ]
+        }
+      },
+      "origin": "VerveFlow"
+    },
+    {
+      "id": "skill-indexer",
+      "name": "skill-indexer",
+      "path": "skill-indexing-maintainer/SKILL.md",
+      "type": "tools",
+      "layer": 5,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Update skill index",
+            "Add typical queries",
+            "Skill not triggering",
+            "Improve skill discovery"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Maintain skill intelligent indexing (add typical queries/update summary/split sub-capabilities/check coverage)",
+          "input": "After task retrospectives, when triggers inaccurate",
+          "output": "Updated SKILLS_REGISTRY.json with new typicalQueries",
+          "keyPhrases": [
+            "indexing",
+            "trigger optimization",
+            "typical queries",
+            "sub-capabilities"
+          ]
+        }
+      }
+    },
+    {
+      "id": "skill-evolution",
+      "name": "skill-evolution",
+      "path": "skill-lifecycle-and-evolution/SKILL.md",
+      "type": "tools",
+      "layer": 5,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Skill lifecycle management",
+            "Skill inventory",
+            "Skill evolution tracking",
+            "Retrospective and improvement"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Skill lifecycle and evolution (inventory/update/evolution/closed-loop improvement)",
+          "input": "After task completion, skill issues found",
+          "output": "Updated evolution.json with trigger fixes and improvements",
+          "keyPhrases": [
+            "skill lifecycle",
+            "evolution tracking",
+            "continuous improvement",
+            "closed-loop"
+          ]
+        }
+      }
+    },
+    {
+      "id": "documentation",
+      "name": "docs-and-knowledge-management",
+      "path": "docs-and-knowledge-management/SKILL.md",
+      "type": "knowledge",
+      "layer": 5,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Document governance",
+            "Knowledge management",
+            "Documentation templates",
+            "Obsidian integration"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Document and knowledge management (PRD/Design/ADR/Test/Runbook/Release doc governance + optional Obsidian)",
+          "input": "Need to create docs, organize knowledge",
+          "output": "Organized documentation system with templates",
+          "keyPhrases": [
+            "documentation",
+            "knowledge base",
+            "templates",
+            "obsidian"
+          ]
+        }
+      }
+    },
+    {
+      "id": "implementation-planner",
+      "name": "implementation-plan-writer",
+      "path": "implementation-plan-writer/SKILL.md",
+      "type": "development",
+      "layer": 3,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Create implementation plan",
+            "Break down tasks",
+            "Project planning",
+            "Task estimation"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Generate implementation plan (task breakdown/validation/risks/rollback)",
+          "input": "Design or tech proposal",
+          "output": "Implementation plan with test plan",
+          "keyPhrases": [
+            "implementation plan",
+            "task breakdown",
+            "milestones",
+            "risk assessment"
+          ]
+        }
+      }
+    },
+    {
+      "id": "coding-executor",
+      "name": "coding-executor",
+      "path": "coding-executor/SKILL.md",
+      "type": "development",
+      "layer": 3,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Execute coding tasks",
+            "Follow task checklist",
+            "Implementation execution",
+            "Code by plan"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Execute coding by task checklist (small steps + persistent records + verification)",
+          "input": "Implementation plan",
+          "output": "Completed code with progress tracking",
+          "keyPhrases": [
+            "task execution",
+            "small steps",
+            "verification",
+            "progress tracking"
+          ]
+        }
+      }
+    },
+    {
+      "id": "code-review",
+      "name": "code-review-checklist",
+      "path": "code-review-checklist/SKILL.md",
+      "type": "quality",
+      "layer": 3,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Code review checklist",
+            "PR review",
+            "Quality check",
+            "Code assessment"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Systematic code review (correctness/maintainability/security/performance/testing/docs - 6 dimensions)",
+          "input": "Pull request or code changes",
+          "output": "Code review report with issues and suggestions",
+          "keyPhrases": [
+            "code review",
+            "pull request",
+            "quality assessment",
+            "best practices"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pencil-design-workflow",
+      "name": "pencil-design-workflow",
+      "path": "pencil-design-workflow/SKILL.md",
+      "type": "design",
+      "layer": 2,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Pencil MCP workflow",
+            "Pixel-perfect design to code",
+            "Figma to code",
+            "Component library alignment"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Pencil MCP design-to-code workflow (pixel-perfect precision + component library alignment)",
+          "input": "Figma/Sketch design",
+          "output": "Code aligned with component library (Halo/shadcn)",
+          "keyPhrases": [
+            "Pencil MCP",
+            "pixel-perfect",
+            "component library",
+            "Figma import"
+          ]
+        }
+      }
     }
   ],
   "indexMaintenanceGuide": {
     "whenToUpdate": [
-      "创建新skill时：同时在此注册",
-      "发现触发不准时：补充 typicalQueries",
-      "任务结束复盘时：把'用户实际说法'加入 queryIndex",
-      "skill拆分/合并时：更新 subCapabilities"
+      "Create new skill: Register simultaneously",
+      "Triggers inaccurate: Add typicalQueries",
+      "After task retrospective: Add 'actual user phrasing' to queryIndex",
+      "Skill split/merge: Update subCapabilities"
     ],
     "howToUse": [
-      "AI可读此文件快速定位skill",
-      "可用于自动生成'如何选择skill'的决策树",
-      "可用于检测索引覆盖度"
+      "AI reads this file to quickly locate skills",
+      "Use to auto-generate 'how to select skill' decision tree",
+      "Use to detect index coverage"
     ]
   }
 }
