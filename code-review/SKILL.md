@@ -1,239 +1,263 @@
 ---
-name: code-review-checklist
-description: 代码审查清单（正确性/可维护性/安全性/性能/测试/文档）。系统化代码审查，确保代码质量。当代码审查、PR review、质量检查时使用。
+name: code-review
+description: Systematic pull request and code change review. Use during PR review, merge request evaluation, or when checking code changes before committing. Covers 6 dimensions: correctness, maintainability, security, performance, testing, and documentation.
 ---
 
-# Code Review Checklist - 代码审查清单
+# Code Review
 
-## 目标
+Systematic code review workflow ensuring quality standards for pull requests and code changes.
 
-系统化地审查代码，确保代码质量、可维护性和团队标准一致性。
+## Purpose
 
-## 审查维度
+Review pull requests and code changes systematically to ensure:
+- Code meets quality standards
+- Changes are safe to merge
+- Knowledge is shared across team
+- Best practices are followed
 
-### 1. 正确性 (Correctness)
+## When to Use
+
+| Trigger | Description |
+|---------|-------------|
+| "Review my PR" | Pull request needs review |
+| "Check this code" | Quick code quality check |
+| "Ready to merge?" | Pre-merge validation |
+| "Code review needed" | Formal review process |
+
+## When NOT to Use
+
+| Situation | Use Instead |
+|-----------|-------------|
+| Analyzing existing codebase | `code-analysis` |
+| Optimizing React performance | `react-optimization` |
+| Finding performance bottlenecks | Domain-specific skills |
+| Learning from expert code | `skill-from-masters` |
+
+## Review Dimensions
+
+### 1. Correctness
 
 ```markdown
-## 功能正确性
+## Functional Correctness
 
-### 逻辑正确
-- [ ] 代码实现了需求功能
-- [ ] 边界条件处理正确
-- [ ] 错误处理完善
-- [ ] 无明显bug
+### Logic Verification
+- [ ] Code implements stated requirements
+- [ ] Edge cases handled properly
+- [ ] Error handling comprehensive
+- [ ] No obvious bugs
 
-### 边界条件
-- [ ] 空值/undefined处理
-- [ ] 数组边界检查
-- [ ] 极值处理（最大/最小）
-- [ ] 并发/竞态条件
+### Boundary Conditions
+- [ ] Null/undefined checks
+- [ ] Array/string boundaries
+- [ ] Min/max values
+- [ ] Concurrent/race conditions
 
-### 错误处理
-- [ ] try-catch覆盖必要场景
-- [ ] 错误信息清晰
-- [ ] 错误不会泄露敏感信息
-- [ ] 有适当的日志记录
+### Error Handling
+- [ ] Try-catch where needed
+- [ ] Error messages clear
+- [ ] No sensitive data in errors
+- [ ] Proper logging
 ```
 
-### 2. 可维护性 (Maintainability)
+### 2. Maintainability
 
 ```markdown
-## 代码可维护性
+## Code Maintainability
 
-### 可读性
-- [ ] 变量/函数命名清晰
-- [ ] 代码结构清晰
-- [ ] 复杂逻辑有注释
-- [ ] 避免过度嵌套
+### Readability
+- [ ] Clear variable/function names
+- [ ] Logical code structure
+- [ ] Comments for complex logic
+- [ ] Reasonable nesting depth
 
-### 模块化
-- [ ] 函数职责单一
-- [ ] 函数长度合理（<50行）
-- [ ] 避免重复代码
-- [ ] 合理的抽象层次
+### Modularity
+- [ ] Single responsibility functions
+- [ ] Reasonable function length (<50 lines)
+- [ ] No code duplication
+- [ ] Appropriate abstraction
 
-### 文档
-- [ ] 复杂逻辑有注释
-- [ ] 公共API有文档
-- [ ] 示例代码正确
-- [ ] README更新（如需要）
+### Documentation
+- [ ] Complex logic explained
+- [ ] Public APIs documented
+- [ ] Examples correct
+- [ ] README updated if needed
 ```
 
-### 3. 安全性 (Security)
+### 3. Security
 
 ```markdown
-## 安全检查
+## Security Review
 
-### 输入验证
-- [ ] 用户输入已验证
-- [ ] 防止SQL注入
-- [ ] 防止XSS攻击
-- [ ] 文件类型验证
+### Input Validation
+- [ ] User input validated
+- [ ] SQL injection prevention
+- [ ] XSS attack prevention
+- [ ] File type validation
 
-### 数据安全
-- [ ] 敏感数据加密
-- [ ] 不泄露敏感信息
-- [ ] 安全存储密码
-- [ ] HTTPS通信
+### Data Security
+- [ ] Sensitive data encrypted
+- [ ] No information leakage
+- [ ] Secure password storage
+- [ ] HTTPS for communication
 
-### 权限控制
-- [ ] 访问权限检查
-- [ ] 资源权限验证
-- [ ] API鉴权
-- [ ] 越权访问防护
+### Access Control
+- [ ] Permission checks
+- [ ] Resource authorization
+- [ ] API authentication
+- [ ] Privilege escalation prevention
 ```
 
-### 4. 性能 (Performance)
+### 4. Performance
 
 ```markdown
-## 性能考虑
+## Performance Considerations
 
-### 算法复杂度
-- [ ] 时间复杂度合理
-- [ ] 避免不必要的循环
-- [ ] 使用合适的数据结构
-- [ ] 避免深层嵌套
+### Algorithm Complexity
+- [ ] Reasonable time complexity
+- [ ] Unnecessary loops avoided
+- [ ] Appropriate data structures
+- [ ] Reasonable nesting depth
 
-### 资源使用
-- [ ] 避免内存泄漏
-- [ ] 及时释放资源
-- [ ] 避免频繁的DOM操作
-- [ ] 使用缓存优化
+### Resource Usage
+- [ ] No memory leaks
+- [ ] Resources released properly
+- [ ] DOM operations minimized
+- [ ] Caching used appropriately
 
-### 异步处理
-- [ ] 使用异步避免阻塞
-- [ ] 正确处理Promise
-- [ ] 避免回调地狱
-- [ ] 错误处理完善
+### Async Handling
+- [ ] Non-blocking where needed
+- [ ] Proper Promise handling
+- [ ] No callback hell
+- [ ] Comprehensive error handling
 ```
 
-### 5. 测试 (Testing)
+### 5. Testing
 
 ```markdown
-## 测试覆盖
+## Test Coverage
 
-### 单元测试
-- [ ] 核心逻辑有测试
-- [ ] 边界条件有测试
-- [ ] 错误路径有测试
-- [ ] 测试有意义
+### Unit Tests
+- [ ] Core logic tested
+- [ ] Edge cases covered
+- [ ] Error paths tested
+- [ ] Tests are meaningful
 
-### 测试质量
-- [ ] 测试命名清晰
-- [ ] 测试独立
-- [ ] 断言准确
-- [ ] 无flaky test
+### Test Quality
+- [ ] Clear test names
+- [ ] Tests are independent
+- [ ] Accurate assertions
+- [ ] No flaky tests
 
-### 覆盖率
-- [ ] 新代码覆盖率达标
-- [ ] 关键路径覆盖
-- [ ] 覆盖率未下降
+### Coverage
+- [ ] New code meets coverage threshold
+- [ ] Critical paths covered
+- [ ] Coverage not decreased
 ```
 
-### 6. 文档 (Documentation)
+### 6. Documentation
 
 ```markdown
-## 文档完整性
+## Documentation Completeness
 
-### 代码注释
-- [ ] 复杂逻辑有注释
-- [ ] "为什么"而非"是什么"
-- [ ] 注释与代码一致
-- [ ] 无废弃注释
+### Code Comments
+- [ ] Complex logic explained
+- [ ] Comments explain "why" not "what"
+- [ ] Comments match code
+- [ ] No outdated comments
 
-### API文档
-- [ ] 公共API有文档
-- [ ] 参数类型说明
-- [ ] 返回值说明
-- [ ] 使用示例
+### API Documentation
+- [ ] Public APIs documented
+- [ ] Parameter types specified
+- [ ] Return values described
+- [ ] Usage examples included
 
-### 变更文档
-- [ ] README更新（如需要）
-- [ ] CHANGELOG更新
-- [ ] 迁移指南（如需要）
+### Change Documentation
+- [ ] README updated if needed
+- [ ] CHANGELOG updated
+- [ ] Migration guide if breaking
 ```
 
-## 审查流程
+## Review Process
 
-### Step 1: 快速扫描
+### Step 1: Quick Scan (2 minutes)
 
 ```markdown
-## 初步检查
+## Initial Assessment
 
-### 基本信息
-- PR标题清晰？
-- 描述充分？
-- 相关Issue链接？
-- 变更范围合理？
+### Basic Checks
+- PR title clear and descriptive?
+- Description explains what and why?
+- Related issues linked?
+- Scope of changes reasonable?
 
-### 自动化检查
-- [ ] CI检查通过
-- [ ] 测试全部通过
-- [ ] 覆盖率达标
-- [ ] 无新的warning
+### Automated Checks
+- [ ] CI pipeline passes
+- [ ] All tests pass
+- [ ] Coverage threshold met
+- [ ] No new warnings introduced
 ```
 
-### Step 2: 深度审查
+### Step 2: Deep Review (10-15 minutes)
 
 ```markdown
-## 详细审查
+## Detailed Review
 
-### 代码变更
+### Code Changes
 ```diff
-# 查看diff
-{diff内容}
+# Review the actual diff
+{content}
 ```
 
-### 关注点
-- 核心逻辑变更
-- 复杂算法
-- 安全相关代码
-- 性能敏感代码
+### Focus Areas
+- Core logic changes
+- Complex algorithms
+- Security-sensitive code
+- Performance-critical paths
 ```
 
-### Step 3: 反馈
+### Step 3: Feedback
 
 ```markdown
-## 反馈格式
+## Feedback Format
 
-### 问题报告
+### Issue Report
 ```markdown
-### 问题: {简短描述}
+### Issue: {Brief description}
 
-**位置**: {文件}:{行号}
+**Location**: `{file}:{line}`
 
-**问题**: {详细描述}
+**Problem**: {Detailed explanation}
 
-**建议**: {改进建议}
+**Suggestion**: {Actionable recommendation}
 
-**优先级**: [必须修复/建议修复/可选]
+**Priority**: [Must fix / Should fix / Nice to have]
 ```
 
-### 正向反馈
+### Positive Feedback
 ```markdown
-### 好的做法: {描述}
+### Good practice: {Description}
 
-**位置**: {文件}:{行号}
+**Location**: `{file}:{line}`
 
-**为什么好**: {理由}
+**Why it's good**: {Reason}
 ```
 ```
 
-## 常见问题
+## Common Issues
 
-### 1. 正确性问题
+### 1. Correctness Problems
 
 ```markdown
-## 常见正确性错误
+## Common Correctness Errors
 
-### 边界条件
+### Missing Boundary Checks
 ```javascript
-// ❌ 错误
+// ❌ Wrong: No empty check
 function getFirst(arr) {
-  return arr[0]; // 未检查空数组
+  return arr[0];
 }
 
-// ✅ 正确
+// ✅ Correct: Boundary check
 function getFirst(arr) {
   if (!arr || arr.length === 0) {
     return null;
@@ -242,15 +266,15 @@ function getFirst(arr) {
 }
 ```
 
-### 异步处理
+### Async Error Handling
 ```javascript
-// ❌ 错误
+// ❌ Wrong: No error handling
 async function fetchData() {
   const data = await fetch(url);
-  return data.json(); // 未处理错误
+  return data.json();
 }
 
-// ✅ 正确
+// ✅ Correct: Comprehensive error handling
 async function fetchData() {
   try {
     const response = await fetch(url);
@@ -266,19 +290,19 @@ async function fetchData() {
 ```
 ```
 
-### 2. 性能问题
+### 2. Performance Issues
 
 ```markdown
-## 常见性能问题
+## Common Performance Issues
 
-### 不必要的渲染
+### Unnecessary Re-renders (React)
 ```javascript
-// ❌ 错误: 每次渲染都创建新函数
+// ❌ Wrong: New function each render
 function Component() {
   return <Button onClick={() => handleClick()} />;
 }
 
-// ✅ 正确: 使用useCallback
+// ✅ Correct: useCallback
 function Component() {
   const handleClick = useCallback(() => {
     // ...
@@ -287,14 +311,14 @@ function Component() {
 }
 ```
 
-### 循环中的DOM操作
+### DOM Operations in Loops
 ```javascript
-// ❌ 错误
+// ❌ Wrong: Multiple reflows
 for (let i = 0; i < 1000; i++) {
   document.body.appendChild(createElement());
 }
 
-// ✅ 正确: 使用DocumentFragment
+// ✅ Correct: Single reflow with DocumentFragment
 const fragment = document.createDocumentFragment();
 for (let i = 0; i < 1000; i++) {
   fragment.appendChild(createElement());
@@ -303,62 +327,94 @@ document.body.appendChild(fragment);
 ```
 ```
 
-## 审查检查清单
+## Review Checklist
 
 ```markdown
 ## Code Review Checklist
 
-### 快速检查（2分钟）
-- [ ] CI通过
-- [ ] 测试通过
-- [ ] 描述清晰
-- [ ] 变更合理
+### Quick Checks (2 minutes)
+- [ ] CI passes
+- [ ] Tests pass
+- [ ] Description clear
+- [ ] Changes reasonable
 
-### 深度审查（10-15分钟）
-- [ ] 功能正确性
-- [ ] 代码可读性
-- [ ] 安全性检查
-- [ ] 性能考虑
-- [ ] 测试覆盖
-- [ ] 文档完整
+### Deep Review (10-15 minutes)
+- [ ] Functional correctness
+- [ ] Code readability
+- [ ] Security reviewed
+- [ ] Performance considered
+- [ ] Tests adequate
+- [ ] Documentation complete
 
-### 反馈
-- [ ] 问题报告清晰
-- [ ] 建议可操作
-- [ ] 优先级明确
-- [ ] 语气友好
+### Feedback
+- [ ] Issues clearly described
+- [ ] Suggestions actionable
+- [ ] Priorities indicated
+- [ ] Tone constructive
 ```
 
-## 与其他技能的集成
+## Integration with Other Skills
 
-### 前置技能
-- `coding-executor` - 代码完成后审查
-- `testing-orchestrator` - 测试通过后审查
+### Pre-requisites
+- `coding-executor`: Code is ready for review after implementation
+- `testing-orchestrator`: Tests passing before review
 
-### 后置技能
-- `quality-gate` - 审查通过后进入质量门禁
-- `deployment-and-ops` - 审查通过后可部署
+### Post-review
+- `quality-gate`: Review must pass before quality gate
+- `deployment-and-ops`: Approved code can proceed to deployment
 
-### 协作技能
-- `systematic-debugging` - 发现问题时调试
-- `react-performance-optimizer` - 性能问题优化
+### Collaboration
+- `code-analysis`: Deep dive into code quality issues found
+- `react-optimization`: React-specific performance fixes
+- Domain skills: Specific optimization recommendations
 
-## 最佳实践
+## Best Practices
 
-### 1. 及时审查
-- PR创建后24小时内审查
-- 避免大量代码累积
+### 1. Timely Reviews
+- Review PRs within 24 hours
+- Avoid large code accumulation
+- Request partial reviews for large changes
 
-### 2. 建设性反馈
-- 指出问题的同时给出建议
-- 解释为什么需要改进
+### 2. Constructive Feedback
+- Explain the "why" behind suggestions
+- Provide actionable alternatives
+- Acknowledge good practices
 
-### 3. 认可好代码
-- 及时认可优秀实践
-- 分享学习机会
+### 3. Collaborative Approach
+- Ask questions instead of demanding changes
+- Suggest, don't dictate
+- Share knowledge, not just criticism
+
+## Output Format
+
+### Review Summary
+
+```markdown
+# Code Review Summary
+
+## Status: [Approved / Approved with changes / Request changes]
+
+## Overview
+Brief summary of the changes and overall impression.
+
+## Must Fix (Blocking)
+- [ ] Issue 1
+- [ ] Issue 2
+
+## Should Fix (Non-blocking)
+- [ ] Suggestion 1
+- [ ] Suggestion 2
+
+## Nice to Have
+- [ ] Enhancement 1
+
+## Positive Notes
+- Good practice observed
+```
 
 ---
 
-**维护**: 根据代码审查经验持续优化
-**来源**: Cursor Hi Offer code-review-checklist
-**相关**: quality-gate, coding-executor, testing-orchestrator
+**Workflow**: Pull Request / Merge Request Review
+**Layer**: Quality Assurance
+**Phase**: Testing / Quality Gate
+**Related**: code-analysis, quality-gate, testing-orchestrator

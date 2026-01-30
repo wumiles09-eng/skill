@@ -1,7 +1,7 @@
 {
   "$schema": "Machine-readable skill registry for intelligent indexing",
   "version": "2.1.0",
-  "lastUpdated": "2026-01-29",
+  "lastUpdated": "2026-01-30",
   "indexingStrategy": {
     "note": "4-layer hybrid indexing: query + summary + sub-chunk + block",
     "principles": [
@@ -377,9 +377,9 @@
       }
     },
     {
-      "id": "ios-simulator-deployment",
-      "name": "ios-simulator-deployment",
-      "path": "ios-simulator-deployment/SKILL.md",
+      "id": "ios-deployment",
+      "name": "ios-deployment",
+      "path": "ios-deployment/SKILL.md",
       "type": "deployment",
       "layer": 4,
       "indexingMethods": {
@@ -408,7 +408,7 @@
     {
       "id": "skill-indexer",
       "name": "skill-indexer",
-      "path": "skill-indexing-maintainer/SKILL.md",
+      "path": "skill-indexer/SKILL.md",
       "type": "tools",
       "layer": 5,
       "indexingMethods": {
@@ -436,7 +436,7 @@
     {
       "id": "skill-evolution",
       "name": "skill-evolution",
-      "path": "skill-lifecycle-and-evolution/SKILL.md",
+      "path": "skill-evolution/SKILL.md",
       "type": "tools",
       "layer": 5,
       "indexingMethods": {
@@ -463,8 +463,8 @@
     },
     {
       "id": "documentation",
-      "name": "docs-and-knowledge-management",
-      "path": "docs-and-knowledge-management/SKILL.md",
+      "name": "documentation",
+      "path": "documentation/SKILL.md",
       "type": "knowledge",
       "layer": 5,
       "indexingMethods": {
@@ -491,8 +491,8 @@
     },
     {
       "id": "implementation-planner",
-      "name": "implementation-plan-writer",
-      "path": "implementation-plan-writer/SKILL.md",
+      "name": "implementation-planner",
+      "path": "implementation-planner/SKILL.md",
       "type": "development",
       "layer": 3,
       "indexingMethods": {
@@ -546,32 +546,133 @@
       }
     },
     {
+      "id": "code-analysis",
+      "name": "code-analysis",
+      "path": "code-analysis/SKILL.md",
+      "type": "development",
+      "layer": 3,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Analyze my code",
+            "Code quality assessment",
+            "Find code smells",
+            "Dependency analysis",
+            "Refactoring suggestions",
+            "Codebase health check"
+          ],
+          "antiPatterns": [
+            "Reviewing a PR (use code-review)",
+            "React-specific optimization (use react-optimization)",
+            "Database optimization (use postgres-optimization)"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Language-agnostic code analysis for quality assessment, dependency mapping, code smell detection, and refactoring strategies",
+          "input": "Codebase or code files to analyze",
+          "output": "Analysis report with issues, dependencies, and recommendations",
+          "keyPhrases": [
+            "code analysis",
+            "code smells",
+            "dependency mapping",
+            "refactoring",
+            "code quality",
+            "language-agnostic"
+          ],
+          "nextStep": [
+            "react-optimization",
+            "postgres-optimization",
+            "code-review"
+          ]
+        }
+      },
+      "note": "Use for general code analysis. For domain-specific needs, use react-optimization, postgres-optimization, etc."
+    },
+    {
       "id": "code-review",
-      "name": "code-review-checklist",
-      "path": "code-review-checklist/SKILL.md",
+      "name": "code-review",
+      "path": "code-review/SKILL.md",
       "type": "quality",
       "layer": 3,
       "indexingMethods": {
         "queryIndex": {
           "typicalQueries": [
-            "Code review checklist",
-            "PR review",
-            "Quality check",
-            "Code assessment"
+            "Review my PR",
+            "Code review",
+            "Check this code",
+            "Ready to merge?",
+            "PR review needed"
+          ],
+          "antiPatterns": [
+            "Analyzing existing codebase (use code-analysis)",
+            "React performance (use react-optimization)",
+            "Learning from experts (use skill-from-masters)"
           ]
         },
         "summaryIndex": {
-          "capability": "Systematic code review (correctness/maintainability/security/performance/testing/docs - 6 dimensions)",
+          "capability": "Systematic pull request review covering 6 dimensions: correctness, maintainability, security, performance, testing, documentation",
           "input": "Pull request or code changes",
-          "output": "Code review report with issues and suggestions",
+          "output": "Review feedback with issues, suggestions, and approval status",
           "keyPhrases": [
             "code review",
             "pull request",
-            "quality assessment",
-            "best practices"
+            "PR review",
+            "quality gate",
+            "merge approval"
+          ],
+          "dependencies": [
+            "coding-executor",
+            "testing-orchestrator"
+          ],
+          "nextStep": [
+            "quality-gate",
+            "deployment-and-ops"
           ]
         }
-      }
+      },
+      "note": "Reactive workflow for reviewing code changes. For proactive analysis, use code-analysis."
+    },
+    {
+      "id": "skill-from-masters",
+      "name": "skill-from-masters",
+      "path": "skill-from-masters/SKILL.md",
+      "type": "learning",
+      "layer": 5,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Learn from expert code",
+            "Extract patterns from codebase",
+            "Create skill from patterns",
+            "How do experts structure code",
+            "Best practices from experts"
+          ],
+          "antiPatterns": [
+            "Reviewing a PR (use code-review)",
+            "Analyzing your codebase (use code-analysis)",
+            "Improving existing code (use domain-specific skills)"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "Meta-skill for extracting patterns from expert developers and creating reusable skills based on master-level approaches",
+          "input": "Expert codebase to analyze and learn from",
+          "output": "New skill with extracted patterns, best practices, and examples",
+          "keyPhrases": [
+            "pattern extraction",
+            "expert analysis",
+            "skill creation",
+            "best practices",
+            "master-level patterns"
+          ],
+          "dependencies": [
+            "code-analysis"
+          ],
+          "nextStep": [
+            "skill-creator"
+          ]
+        }
+      },
+      "note": "Meta-skill for learning and creating new skills. Not for direct code improvement."
     },
     {
       "id": "pencil-design-workflow",
@@ -600,6 +701,85 @@
           ]
         }
       }
+    },
+    {
+      "id": "react-optimization",
+      "name": "react-optimization",
+      "path": "react-optimization/SKILL.md",
+      "type": "frontend",
+      "layer": 3,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Optimize React performance",
+            "Fix React hooks",
+            "Next.js optimization",
+            "React rendering issues",
+            "Bundle size optimization"
+          ],
+          "antiPatterns": [
+            "General code analysis (use code-analysis)",
+            "Other framework optimization (use respective domain skill)"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "React and Next.js performance optimization from Vercel Engineering: hooks usage, rendering optimization, memoization, bundle size",
+          "input": "React/Next.js code to optimize",
+          "output": "Optimized code with performance improvements",
+          "keyPhrases": [
+            "React optimization",
+            "Next.js performance",
+            "hooks",
+            "memoization",
+            "bundle size",
+            "Vercel best practices"
+          ],
+          "dependencies": [
+            "code-analysis"
+          ]
+        }
+      },
+      "note": "Domain-specific for React/Next.js. Source: Vercel Engineering",
+      "origin": "Vercel Engineering"
+    },
+    {
+      "id": "postgres-optimization",
+      "name": "postgres-optimization",
+      "path": "postgres-optimization/SKILL.md",
+      "type": "backend",
+      "layer": 3,
+      "indexingMethods": {
+        "queryIndex": {
+          "typicalQueries": [
+            "Optimize PostgreSQL queries",
+            "Database performance",
+            "Index strategy",
+            "Supabase optimization",
+            "Slow query analysis"
+          ],
+          "antiPatterns": [
+            "General code analysis (use code-analysis)",
+            "Other database optimization (use respective domain skill)"
+          ]
+        },
+        "summaryIndex": {
+          "capability": "PostgreSQL optimization for Supabase: query optimization, indexing strategies, RLS policies, stored procedures",
+          "input": "PostgreSQL schema or queries",
+          "output": "Optimized database design and queries",
+          "keyPhrases": [
+            "PostgreSQL optimization",
+            "query performance",
+            "indexing",
+            "Supabase",
+            "RLS",
+            "database design"
+          ],
+          "dependencies": [
+            "code-analysis"
+          ]
+        }
+      },
+      "note": "Domain-specific for PostgreSQL/Supabase"
     }
   ],
   "indexMaintenanceGuide": {

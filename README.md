@@ -30,6 +30,7 @@ Complete R&D workflow system powered by specialized AI skills — from idea to p
 - 📊 **Productivity Tools** - Planning, documentation, and workflow automation
 - 🧠 **Intelligent Indexing** - 4-layer hybrid indexing with evolution tracking
 - 🔄 **Self-Evolving** - Skills improve with usage through feedback loops
+- 🔀 **Domain Split Architecture** - Language-agnostic core + domain-specific optimizations
 
 ---
 
@@ -141,7 +142,7 @@ Claude: Activates workflow-orchestrator → requirements-clarifier → architect
 
 | Skill | Description |
 |-------|-------------|
-| **code-review** | Code review checklist (6 dimensions) |
+| **code-review** | Systematic PR review workflow (6 dimensions) |
 | **planning-with-files** | Persistent planning for iterations |
 
 ### 🛠️ Tools (4)
@@ -185,8 +186,8 @@ Claude: Activates workflow-orchestrator → requirements-clarifier → architect
 
 | Skill | Description |
 |-------|-------------|
-| **code-analysis** | Code analysis, refactoring, automation |
-| **skill-from-masters** | Extract patterns from expert developers |
+| **code-analysis** | Language-agnostic code analysis (smells, dependencies, refactoring) |
+| **skill-from-masters** | Meta-skill: Extract patterns from expert developers |
 
 ---
 
