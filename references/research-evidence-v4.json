@@ -1,0 +1,526 @@
+{
+  "2050068409881722882": {
+    "eps": 9,
+    "avg_dur": 167.23333333333332,
+    "avg_sm": 11.301866229748022,
+    "avg_wm": 74.47344530390097,
+    "first_speech": 3.3333333333333335,
+    "paywall": "mortal-peril(netshort)",
+    "class_insults": 1,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 0,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 1,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 5,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 1,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 214.5,
+        "sm": 7.832167832167832,
+        "wm": 58.18181818181818
+      },
+      {
+        "ep": 2,
+        "dur": 185.5,
+        "sm": 18.11320754716981,
+        "wm": 90.56603773584905
+      },
+      {
+        "ep": 3,
+        "dur": 180.2,
+        "sm": 9.65593784683685,
+        "wm": 82.24195338512764
+      },
+      {
+        "ep": 4,
+        "dur": 180.3,
+        "sm": 13.643926788685523,
+        "wm": 104.49251247920132
+      },
+      {
+        "ep": 5,
+        "dur": 148.0,
+        "sm": 12.972972972972972,
+        "wm": 84.32432432432432
+      },
+      {
+        "ep": 6,
+        "dur": 114.4,
+        "sm": 10.48951048951049,
+        "wm": 79.72027972027972
+      },
+      {
+        "ep": 7,
+        "dur": 102.3,
+        "sm": 9.3841642228739,
+        "wm": 47.50733137829913
+      },
+      {
+        "ep": 8,
+        "dur": 171.5,
+        "sm": 8.396501457725947,
+        "wm": 60.17492711370262
+      },
+      {
+        "ep": 9,
+        "dur": 208.4,
+        "sm": 11.228406909788866,
+        "wm": 63.051823416506714
+      }
+    ]
+  },
+  "2054462935454318593": {
+    "eps": 8,
+    "avg_dur": 137.025,
+    "avg_sm": 15.759615077917708,
+    "avg_wm": 122.51988290538961,
+    "first_speech": 0.0,
+    "paywall": "mortal-peril(netshort)",
+    "class_insults": 16,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 9,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 6,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 7,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 2,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 2,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 1
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 209.8,
+        "sm": 14.585319351763582,
+        "wm": 115.53860819828407
+      },
+      {
+        "ep": 2,
+        "dur": 93.6,
+        "sm": 13.461538461538463,
+        "wm": 126.92307692307693
+      },
+      {
+        "ep": 3,
+        "dur": 133.1,
+        "sm": 16.228399699474082,
+        "wm": 130.72877535687454
+      },
+      {
+        "ep": 4,
+        "dur": 142.9,
+        "sm": 18.89433170048985,
+        "wm": 125.12246326102168
+      },
+      {
+        "ep": 5,
+        "dur": 106.3,
+        "sm": 20.88428974600188,
+        "wm": 158.60771401693322
+      },
+      {
+        "ep": 6,
+        "dur": 144.3,
+        "sm": 13.305613305613305,
+        "wm": 103.11850311850311
+      },
+      {
+        "ep": 7,
+        "dur": 111.9,
+        "sm": 13.941018766756033,
+        "wm": 130.29490616621985
+      },
+      {
+        "ep": 8,
+        "dur": 154.3,
+        "sm": 14.776409591704471,
+        "wm": 89.8250162022035
+      }
+    ]
+  },
+  "2055222367238881281": {
+    "eps": 1,
+    "avg_dur": 286.0,
+    "avg_sm": 13.216783216783217,
+    "avg_wm": 73.21678321678321,
+    "first_speech": 0.0,
+    "paywall": "mortal-peril(netshort)",
+    "class_insults": 0,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 1,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 0,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 0,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 286.0,
+        "sm": 13.216783216783217,
+        "wm": 73.21678321678321
+      }
+    ]
+  },
+  "2059541389654171649": {
+    "eps": 12,
+    "avg_dur": 161.92499999999998,
+    "avg_sm": 14.19820998972871,
+    "avg_wm": 97.4548736014575,
+    "first_speech": 0.0,
+    "paywall": "truth-reveal(shorttv)",
+    "class_insults": 5,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 1,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 11,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 2,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 161.8,
+        "sm": 14.091470951792335,
+        "wm": 83.8071693448702
+      },
+      {
+        "ep": 2,
+        "dur": 114.5,
+        "sm": 7.860262008733624,
+        "wm": 48.20960698689956
+      },
+      {
+        "ep": 3,
+        "dur": 197.4,
+        "sm": 14.285714285714285,
+        "wm": 102.43161094224924
+      },
+      {
+        "ep": 4,
+        "dur": 180.5,
+        "sm": 15.623268698060942,
+        "wm": 124.3213296398892
+      },
+      {
+        "ep": 5,
+        "dur": 132.9,
+        "sm": 13.544018058690742,
+        "wm": 106.09480812641083
+      },
+      {
+        "ep": 6,
+        "dur": 141.9,
+        "sm": 16.0676532769556,
+        "wm": 96.82875264270612
+      },
+      {
+        "ep": 7,
+        "dur": 140.7,
+        "sm": 15.778251599147124,
+        "wm": 75.90618336886995
+      },
+      {
+        "ep": 8,
+        "dur": 175.0,
+        "sm": 10.62857142857143,
+        "wm": 65.14285714285715
+      },
+      {
+        "ep": 9,
+        "dur": 168.7,
+        "sm": 17.427385892116185,
+        "wm": 107.7652637818613
+      },
+      {
+        "ep": 10,
+        "dur": 227.6,
+        "sm": 16.87170474516696,
+        "wm": 129.43760984182776
+      },
+      {
+        "ep": 11,
+        "dur": 91.7,
+        "sm": 13.086150490730644,
+        "wm": 126.28135223555071
+      },
+      {
+        "ep": 12,
+        "dur": 210.4,
+        "sm": 15.114068441064639,
+        "wm": 103.2319391634981
+      }
+    ]
+  },
+  "2064173469224087553": {
+    "eps": 1,
+    "avg_dur": 232.3,
+    "avg_sm": 14.46405510116229,
+    "avg_wm": 128.3684890228153,
+    "first_speech": 0.0,
+    "paywall": "mortal-peril(netshort)",
+    "class_insults": 0,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 0,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 0,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 0,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 232.3,
+        "sm": 14.46405510116229,
+        "wm": 128.3684890228153
+      }
+    ]
+  },
+  "2064962492549566465": {
+    "eps": 1,
+    "avg_dur": 259.5,
+    "avg_sm": 12.485549132947977,
+    "avg_wm": 80.92485549132948,
+    "first_speech": 0.0,
+    "paywall": "ambiguous",
+    "class_insults": 0,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 0,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 0,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 0,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 259.5,
+        "sm": 12.485549132947977,
+        "wm": 80.92485549132948
+      }
+    ]
+  },
+  "2067471053885919234": {
+    "eps": 1,
+    "avg_dur": 300.6,
+    "avg_sm": 14.770459081836325,
+    "avg_wm": 98.20359281437125,
+    "first_speech": 0.0,
+    "paywall": "ambiguous",
+    "class_insults": 2,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 0,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 3,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 0,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 300.6,
+        "sm": 14.770459081836325,
+        "wm": 98.20359281437125
+      }
+    ]
+  },
+  "2067496600745660417": {
+    "eps": 1,
+    "avg_dur": 149.1,
+    "avg_sm": 16.09657947686117,
+    "avg_wm": 87.32394366197184,
+    "first_speech": 0.0,
+    "paywall": "mortal-peril",
+    "class_insults": 0,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 0,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 0,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 0,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 149.1,
+        "sm": 16.09657947686117,
+        "wm": 87.32394366197184
+      }
+    ]
+  },
+  "2067519752146108417": {
+    "eps": 1,
+    "avg_dur": 218.1,
+    "avg_sm": 7.702888583218708,
+    "avg_wm": 50.34387895460798,
+    "first_speech": 0.0,
+    "paywall": "ambiguous",
+    "class_insults": 0,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 0,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 0,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 0,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 218.1,
+        "sm": 7.702888583218708,
+        "wm": 50.34387895460798
+      }
+    ]
+  },
+  "2068175528607072258": {
+    "eps": 1,
+    "avg_dur": 299.0,
+    "avg_sm": 11.237458193979933,
+    "avg_wm": 70.8361204013378,
+    "first_speech": 0.0,
+    "paywall": "mortal-peril(netshort)",
+    "class_insults": 0,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 0,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 0,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 0,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 299.0,
+        "sm": 11.237458193979933,
+        "wm": 70.8361204013378
+      }
+    ]
+  },
+  "2069011193716523009": {
+    "eps": 1,
+    "avg_dur": 175.2,
+    "avg_sm": 7.876712328767123,
+    "avg_wm": 65.06849315068493,
+    "first_speech": 0.0,
+    "paywall": "mortal-peril",
+    "class_insults": 0,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 0,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 0,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 0,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 175.2,
+        "sm": 7.876712328767123,
+        "wm": 65.06849315068493
+      }
+    ]
+  },
+  "2069633639251898370": {
+    "eps": 1,
+    "avg_dur": 287.2,
+    "avg_sm": 14.206128133704738,
+    "avg_wm": 138.5097493036212,
+    "first_speech": 0.0,
+    "paywall": "ambiguous",
+    "class_insults": 2,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 0,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 0,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 1,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 1,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 287.2,
+        "sm": 14.206128133704738,
+        "wm": 138.5097493036212
+      }
+    ]
+  },
+  "mommy-im-not-lying": {
+    "eps": 6,
+    "avg_dur": 69.06666666666666,
+    "avg_sm": 15.95609675922829,
+    "avg_wm": 109.38310497643863,
+    "first_speech": 0.0,
+    "paywall": "mortal-peril(netshort)",
+    "class_insults": 1,
+    "shuangdian": {
+      "face-slap(\u6253\u8138)": 0,
+      "identity-reveal(\u8eab\u4efd\u63ed\u6653)": 0,
+      "ceo-protects(\u9738\u603b\u62a4\u59bb)": 1,
+      "hidden-power(\u9690\u85cf\u5b9e\u529b\u88ab\u4f4e\u4f30)": 1,
+      "angst-regret(\u8650\u5fc3-\u6094\u6068)": 6,
+      "contract-marriage(\u5951\u7ea6\u5a5a\u53cd\u8f6c)": 0,
+      "god-view-contrast(\u4e0a\u5e1d\u89c6\u89d2\u53cd\u5dee)": 0
+    },
+    "density_curve": [
+      {
+        "ep": 1,
+        "dur": 57.1,
+        "sm": 16.81260945709282,
+        "wm": 125.04378283712785
+      },
+      {
+        "ep": 2,
+        "dur": 65.3,
+        "sm": 14.701378254211331,
+        "wm": 88.208269525268
+      },
+      {
+        "ep": 3,
+        "dur": 67.8,
+        "sm": 15.92920353982301,
+        "wm": 150.4424778761062
+      },
+      {
+        "ep": 4,
+        "dur": 72.2,
+        "sm": 16.62049861495845,
+        "wm": 79.77839335180055
+      },
+      {
+        "ep": 5,
+        "dur": 66.6,
+        "sm": 16.216216216216218,
+        "wm": 95.4954954954955
+      },
+      {
+        "ep": 6,
+        "dur": 85.4,
+        "sm": 15.456674473067915,
+        "wm": 117.33021077283372
+      }
+    ]
+  }
+}
